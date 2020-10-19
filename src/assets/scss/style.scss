@@ -1,0 +1,30 @@
+//LIBRARY
+@import "library.styles/bootstrap/bootstrap";
+
+//MIXINS
+@import "common.blocks/utils/mixins";
+
+//VARIABLE
+@import "common.blocks/utils/variable";
+
+//TEXT
+@import "common.blocks/utils/text";
+
+//FONTS
+@import "common.blocks/utils/fonts";
+
+//BUTTON
+
+
+//SECTIONS
+@import "common.blocks/sections/header";
+@import "common.blocks/sections/section-first";
+@import "common.blocks/sections/section-course-selection";
+
+//BLOCKS
+@import "common.blocks/blocks/icons/icons";
+
+//main styles
+@import "common.blocks/utils/common";
+
+
