@@ -60,3 +60,35 @@ $(function () {
             .show().siblings('div.box').hide();
     }
 })
+
+let btnFirst = document.querySelector('#btnOne');
+let btnSecond = document.querySelector('#btnTwo');
+let btnThree = document.querySelector('#btnThree');
+let btnFlagOne = false;
+let btnFlagTwo = false;
+let btnFlagThree = false;
+
+function enableModal() {
+    if (btnFlagOne === true && btnFlagTwo === true && btnFlagThree === true) {
+        $('#exampleModal').modal('toggle')
+        btnFlagOne = false;
+        btnFlagTwo = false;
+        btnFlagThree = false;
+    }
+
+}
+
+btnFirst.addEventListener('click', function () {
+    btnFlagOne = true
+    enableModal()
+})
+
+btnSecond.addEventListener('click', function () {
+    btnFlagTwo = true
+    enableModal()
+})
+
+btnThree.addEventListener('click', function () {
+    btnFlagThree = true
+    enableModal()
+})

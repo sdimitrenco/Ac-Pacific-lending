@@ -1,0 +1,66 @@
+.main-modal {
+  padding-right: 0 !important;
+
+  .modal-body {
+    padding: 55px 44px 48px 44px;
+  }
+
+  .modal-content {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .form-check-label {
+    font-family: 'Roboto', sans-serif;
+    //padding-left: 30px;
+  }
+
+  .form-check-input {
+    width: 18px;
+    height: 18px;
+    left: 18px;
+    top: -2px;
+    border-radius: 2px;
+    margin-right: 0;
+  }
+
+  .form-check {
+    padding-left: 30px;
+  }
+
+}
+
+.main-modal__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-modal__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #222222;
+  display: block;
+  margin-bottom: 22px;
+}
+
+.main-modal__text {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 28px;
+  color: #555555;
+}
+
+.main-modal__button {
+  width: 235px;
+  height: 56px;
+  margin-bottom: 46px;
+  margin-top: 34px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 558px;
+    margin: 1.75rem auto;
+  }
+}

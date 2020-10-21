@@ -70,7 +70,9 @@
                         <span class="h1 section-course-selection__title">ВЫБЕРИ СВОЙ КУРС</span>
                     </div>
                     <div class="col-12">
-
+                        <button type="button" id="btnOne" class="btn btn-primary">1</button>
+                        <button type="button" id="btnTwo" class="btn btn-primary">2</button>
+                        <button type="button" id="btnThree" class="btn btn-primary">3</button>
                     </div>
                 </div>
             </div>
@@ -128,7 +130,7 @@
                         <div class="col-12">
                             <span class="h1 section-what-learned__title">Чему вы научитесь</span>
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 d-flex align-items-center">
                             <ul class="section-what-learned__list">
                                 <li class="section-what-learned__item">
                                     <div class="section-what-learned__item-img">
@@ -158,7 +160,7 @@
                         </div>
                         <div class="col-6">
                             <div class="section-what-learned__videoWrapper">
-                                <video src=""></video>
+                                <iframe class="w-100" height="315" src="https://www.youtube.com/embed/Sx6dAx7dnXg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -996,7 +998,34 @@
     </footer>
 </div>
 
-
+<div class="modal fade main-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="main-modal__body">
+                    <span class="main-modal__title">Не можете понять нужен ли вам этот курс?</span>
+                    <p class="main-modal__text">Отправьте свои данные и наш менеджер свяжется с вами в течении 5ти минут</p>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="formName" placeholder="Имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="formEmail" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="formTel" placeholder="Телефон">
+                        </div>
+                        <button type="submit" class="btn btn-primary main-btn main-modal__button">Отправить</button>
+                        <div class="form-group form-check mb-0">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Даю согласие на обработку персональных данных</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="assets/js/libs.min.js" type="module"></script>
 
