@@ -29,6 +29,13 @@ main {
   flex-grow: 0;
 }
 
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+.bg-color {
+  background: linear-gradient(180deg, #663755 3.04%, #1E203C 100%);
+}
 
 @media (min-width: 1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl {

@@ -1,0 +1,34 @@
+.section-our-clients {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.section-our-clients__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  display: block;
+  color: #333333;
+}
+
+.section-our-clients__subtitle {
+  font-size: 20px;
+  line-height: 21px;
+  text-align: center;
+  color: #444444;
+  display: block;
+}
+
+.section-our-clients__slider {
+  margin-top: 65px;
+  margin-bottom: 75px;
+}
+
+.section-our-clients__slider-item {
+  width: 218px;
+  margin-right: 21px;
+
+  span {
+    width: 100%;
+  }
+}

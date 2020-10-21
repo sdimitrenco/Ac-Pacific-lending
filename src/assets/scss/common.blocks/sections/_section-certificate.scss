@@ -1,0 +1,49 @@
+.section-certificate {
+  padding-top: 106px;
+  padding-bottom: 92px;
+}
+
+.section-certificate__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-certificate__wrapper-text {
+  max-width: 448px;
+}
+
+.section-certificate__title {
+  text-transform: uppercase;
+  color: $white;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.section-certificate__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #CBCBCB;
+}
+
+.section-certificate__block {
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 404px;
+  width: 100%;
+
+  span {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #222222;
+  }
+
+  img {
+
+  }
+}

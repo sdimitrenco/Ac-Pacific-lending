@@ -3,30 +3,31 @@ import 'bootstrap/dist/js/bootstrap.min';
 import 'slick-carousel/slick/slick.min';
 
 
-// $('.slider-container').slick({
-//     infinite: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     dots: false,
-//     responsive: [
-//         {
-//             breakpoint: 992,
-//             settings: {
-//                 slidesToShow: 2,
-//                 slidesToScroll: 1,
-//                 infinite: true,
-//                 dots: false
-//             }
-//         },
-//         {
-//             breakpoint: 768,
-//             settings: {
-//                 slidesToShow: 1,
-//                 slidesToScroll: 1
-//             }
-//         }
-//     ]
-// });
+$('.sliderFirst').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    centerMode: true,
+    variableWidth: true,
+});
+
+$('.sliderSecond').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+});
+
+$('.section-our-clients__slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true,
+    centerPadding: '0px',
+});
 
 // $(document).ready(function(){
 //     $(".anchor-link").on("click", function (event) {

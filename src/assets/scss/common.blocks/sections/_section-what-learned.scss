@@ -1,0 +1,46 @@
+.section-what-learned {
+  position: relative;
+  padding-top: 46px;
+  padding-bottom: 63px;
+  z-index: 2;
+}
+
+.section-what-learned__title {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: #FFFFFF;
+  margin-bottom: 36px;
+}
+
+.section-what-learned__item {
+  display: flex;
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.section-what-learned__item-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #CBCBCB;
+}
+
+.section-what-learned__item-img {
+  margin-right: 30px;
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-what-learned__list {
+  padding-top: 20px;
+  max-width: 500px;
+  padding-left: 20px;
+}
+
+.section-what-learned__videoWrapper {
+
+}

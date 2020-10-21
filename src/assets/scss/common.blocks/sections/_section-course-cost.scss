@@ -1,0 +1,122 @@
+.section-course-cost {
+  padding-top: 55px;
+  background: #ffffff;
+}
+
+.section-course-cost__block {
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-bottom: 96px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 60px);
+    height: calc(100% - 56px);
+    background: #643755;
+    filter: blur(44px);
+    border-radius: 22px;
+    z-index: 1;
+  }
+}
+
+.section-course-cost__block-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 33px 30px 28px 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.section-course-cost__block-elem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.section-course-cost__block-arrow {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-course-cost__block-text {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.section-course-cost__block-price {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 61px;
+  text-align: center;
+  color: #222222;
+}
+
+.section-course-cost__block-btn {
+  width: 306px;
+  height: 54px;
+}
+
+.section-course-cost__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  display: block;
+  margin-bottom: 53px;
+}
+
+.section-course-cost__listBlock {
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 39px;
+  border-bottom: 1px solid #E7E7E7;
+  margin-bottom: 25px;
+
+  span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+  }
+}
+
+.section-course-cost__text-container {
+  padding-top: 40px;
+  padding-bottom: 67px;
+}
+
+.section-course-cost__text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.section-course-cost__img-block {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+  }
+}

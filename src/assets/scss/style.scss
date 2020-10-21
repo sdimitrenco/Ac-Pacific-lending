@@ -1,5 +1,7 @@
 //LIBRARY
 @import "library.styles/bootstrap/bootstrap";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
 
 //MIXINS
 @import "common.blocks/utils/mixins";
@@ -14,15 +16,27 @@
 @import "common.blocks/utils/fonts";
 
 //BUTTON
-
+@import "common.blocks/blocks/buttons";
 
 //SECTIONS
 @import "common.blocks/sections/header";
+@import "common.blocks/sections/footer";
 @import "common.blocks/sections/section-first";
 @import "common.blocks/sections/section-course-selection";
+@import "common.blocks/sections/section-teachers";
+@import "common.blocks/sections/section-program";
+@import "common.blocks/sections/section-certificate";
+@import "common.blocks/sections/section-review";
+@import "common.blocks/sections/section-helpChoosing";
+@import "common.blocks/sections/section-questions";
+@import "common.blocks/sections/section-course-cost";
+@import "common.blocks/sections/section-what-learned";
+@import "common.blocks/sections/section-our-clients";
 
 //BLOCKS
 @import "common.blocks/blocks/icons/icons";
+@import "common.blocks/blocks/slider";
+@import "common.blocks/blocks/list-modules";
 
 //main styles
 @import "common.blocks/utils/common";
