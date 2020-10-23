@@ -41,9 +41,24 @@
     line-height: 45px;
     text-transform: uppercase;
     color: #222222;
+    text-align: center;
   }
 
   img {
 
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-certificate__wrapper-text {
+    max-width: 100%;
+    margin-bottom: 34px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-certificate {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }

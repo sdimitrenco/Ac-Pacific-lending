@@ -88,3 +88,25 @@
   margin-bottom: 18px;
   display: block;
 }
+
+@media (max-width: 767.98px) {
+  .list-modules {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .list-modules__title {
+    font-size: 18px;
+  }
+
+  .list-modules .btn-link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .list-modules .btn-link:before {
+    width: 22px;
+    height: 22px;
+  }
+}

@@ -8,3 +8,20 @@
   align-items: center;
   justify-content: center;
 }
+
+.btn-border-black {
+  background: #1E203B;
+  border: 1px solid #CC1237;
+  color: #FFFFFF;
+
+  &:hover {
+    color: #CC1237;
+    background: #ffffff;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main-btn {
+    font-size: 14px;
+  }
+}

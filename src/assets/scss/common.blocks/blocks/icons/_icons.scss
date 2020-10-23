@@ -149,3 +149,27 @@
   height: 32px;
   display: block;
 }
+
+.student-icon {
+  background: url("../img/student-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 67px;
+  height: 67px;
+  display: block;
+}
+
+.salesman-icon {
+  background: url("../img/salesman-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 69px;
+  height: 69px;
+  display: block;
+}
+
+.guru-master-icon {
+  background: url("../img/guru-master-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 39px;
+  height: 62px;
+  display: block;
+}

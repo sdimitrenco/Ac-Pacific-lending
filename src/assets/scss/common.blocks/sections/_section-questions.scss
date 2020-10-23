@@ -33,3 +33,29 @@
   display: block;
   margin-bottom: 0;
 }
+
+@media (max-width: 767.98px) {
+  .section-questions {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .section-questions__title {
+    margin-bottom: 30px;
+    line-height: normal;
+  }
+
+  .section-questions__block {
+    margin-bottom: 24px;
+  }
+
+  .section-helpChoosing__btn {
+    width: 290px;
+    font-size: 14px;
+  }
+
+  .section-helpChoosing__text {
+    font-size: 18px;
+    line-height: normal;
+  }
+}

@@ -1,6 +1,8 @@
 .section-course-cost {
   padding-top: 55px;
   background: #ffffff;
+  position: relative;
+  z-index: 10;
 }
 
 .section-course-cost__block {
@@ -79,10 +81,8 @@
 }
 
 .section-course-cost__listBlock {
-
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
@@ -95,12 +95,16 @@
     font-size: 20px;
     line-height: 24px;
     color: #333333;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 .section-course-cost__text-container {
   padding-top: 40px;
   padding-bottom: 67px;
+  min-height: 345px;
 }
 
 .section-course-cost__text {
@@ -118,5 +122,109 @@
     max-width: 100%;
     position: absolute;
     top: 0;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .section-course-cost__block-wrapper {
+    flex-direction: column;
+  }
+
+  .section-course-cost__block-arrow {
+    display: none;
+  }
+
+  .section-course-cost__block-elem {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .section-course-cost__listBlock {
+    flex-direction: column;
+    align-items: flex-start;
+
+    span {
+      margin-bottom: 16px;
+      text-align: left;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .section-course-cost__block-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-course-cost__img-block {
+    img {
+      position: static;
+    }
+  }
+
+  .section-course-cost__text-container {
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+
+  .section-course-selection__block-wrapper {
+    min-height: auto;
+  }
+
+  .section-course-selection__block-btn {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-course-cost__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .section-course-cost__listBlock {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+
+  .section-course-cost__text-container {
+    padding-top: 20px;
+  }
+
+  .section-course-cost__title {
+    margin-bottom: 30px;
+  }
+
+  .section-course-cost__block-text {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .section-course-cost__block-price {
+    font-size: 36px;
+  }
+
+  .section-course-cost__block-btn {
+    width: 250px;
+  }
+
+  .section-course-selection__title {
+    font-size: 36px;
+    line-height: normal;
+  }
+
+  .section-course-selection__block-title {
+    font-size: 20px;
+  }
+
+  .section-course-cost__listBlock span {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

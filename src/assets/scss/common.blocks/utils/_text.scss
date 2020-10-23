@@ -39,33 +39,41 @@ h3, .h3 {
 }
 
 @media (max-width: 767.98px) {
- .h2 {
-   font-size: rem(30);
-   line-height: rem(36);
- }
-
-  .main-text {
-    font-size: rem(18);
-    line-height: rem(24);
+  h2, .h2 {
+    font-size: rem(24);
+    line-height: normal;
   }
 
   h1, .h1 {
-    font-size: rem(28);
-    line-height: rem(34);
+    font-size: rem(36);
+    line-height: normal;
   }
 
-  .main-text {
-    font-size: rem(14);
-    line-height: rem(20);
+  .section-first__title {
+    .text-nowrap {
+      white-space: normal !important;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-first__btnContainer {
+    flex-direction: column;
   }
 
-  .section-h2-title {
-    font-size: 18px;
-    line-height: 24px;
+  .header__button {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  .section-h3-title {
-    font-size: 16px;
-    line-height: 32px;
+  .section-first__footer-list {
+    flex-wrap: wrap;
+  }
+
+  .section-first__footer-logo {
+    margin-bottom: 24px;
   }
 }

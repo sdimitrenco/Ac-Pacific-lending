@@ -10,6 +10,17 @@ $('.sliderFirst').slick({
     slidesToShow: 3,
     centerMode: true,
     variableWidth: true,
+    responsive: [
+        {
+            breakpoint: 400,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: false,
+                variableWidth: false,
+            }
+        }
+    ]
 });
 
 $('.sliderSecond').slick({
@@ -27,6 +38,17 @@ $('.section-our-clients__slider').slick({
     centerMode: true,
     variableWidth: true,
     centerPadding: '0px',
+    responsive: [
+        {
+            breakpoint: 1420,
+            settings: {
+                centerPadding: '60px',
+                centerMode: false,
+                variableWidth: false,
+                slidesToShow: 4,
+            }
+        }
+    ]
 });
 
 // $(document).ready(function(){
@@ -64,6 +86,9 @@ $(function () {
 let btnFirst = document.querySelector('#btnOne');
 let btnSecond = document.querySelector('#btnTwo');
 let btnThree = document.querySelector('#btnThree');
+let containerTabOne = document.querySelector('.tab-container_1')
+let containerTabTwo = document.querySelector('.tab-container_2')
+let containerTabThree = document.querySelector('.tab-container_3')
 let btnFlagOne = false;
 let btnFlagTwo = false;
 let btnFlagThree = false;
@@ -79,16 +104,25 @@ function enableModal() {
 }
 
 btnFirst.addEventListener('click', function () {
-    btnFlagOne = true
-    enableModal()
+    btnFlagOne = true;
+    enableModal();
 })
 
 btnSecond.addEventListener('click', function () {
-    btnFlagTwo = true
-    enableModal()
+    btnFlagTwo = true;
+    enableModal();
 })
 
 btnThree.addEventListener('click', function () {
-    btnFlagThree = true
-    enableModal()
+    btnFlagThree = true;
+    enableModal();
 })
+
+
+$(document).ready(function () {
+    $('.link').on('click',function (e) {
+        let tabItem = $('div.' + e.target.className)[0];
+        $('.wrap').children().fadeOut();
+        $(tabItem).fadeIn('slow');
+    });
+});

@@ -41,6 +41,7 @@
   margin-left: 15px;
   margin-right: 15px;
   opacity: 0.5;
+  height: auto;
 
    &:focus {
      outline: none;
@@ -61,6 +62,11 @@
       left: 50px;
     }
   }
+
+  .slick-track {
+    display: flex;
+  }
+
 }
 
 .sliderFirst__content {
@@ -175,5 +181,116 @@
     left: 50%;
     bottom: 30px;
     transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .sliderSecond__imgWrap {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &:before {
+      bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  .sliderSecond__item {
+    display: block !important;
+  }
+
+  .sliderSecond__imgWrap {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    float: left;
+  }
+
+  .sliderSecond__body {
+    display: block;
+    padding: 0;
+  }
+
+
+}
+
+@media (max-width: 767.98px) {
+  .arrow-slider .slick-next, .arrow-slider .slick-prev {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sliderSecond {
+    .slick-prev {
+      left: -40px;
+    }
+
+    .slick-next {
+      right: -40px;
+    }
+  }
+
+  .arrow-slider .slick-next:before, .arrow-slider .slick-prev:before {
+    width: 8px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .sliderSecond__item {
+    display: flex!important;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  .sliderSecond__imgWrap {
+    float: initial;
+    display: inline-flex;
+    margin-right: auto;
+    margin-left: auto;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .sliderSecond {
+    .slick-next, .slick-prev {
+      top: 100%;
+    }
+  }
+
+  .sliderSecond .slick-prev {
+    left: 30%;
+  }
+
+  .sliderSecond .slick-next {
+    right: 30%;
+  }
+
+  .sliderFirst__item {
+    margin-bottom: 60px;
+  }
+
+  .sliderFirst.arrow-slider {
+    .slick-next, .slick-prev {
+      top: 100%;
+    }
+
+    .slick-prev {
+      left: auto;
+      right: 55%;
+    }
+
+    .slick-next {
+      right: auto;
+      left: 55%;
+    }
+  }
+
+  .sliderFirst__text {
+    font-size: 14px;
+    line-height: normal;
   }
 }
