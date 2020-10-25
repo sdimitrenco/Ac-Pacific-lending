@@ -47,6 +47,30 @@ $('.section-our-clients__slider').slick({
                 variableWidth: false,
                 slidesToShow: 4,
             }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                centerMode: false,
+                variableWidth: false,
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 991.98,
+            settings: {
+                centerMode: false,
+                variableWidth: false,
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 767.98,
+            settings: {
+                centerMode: false,
+                variableWidth: false,
+                slidesToShow: 1,
+            }
         }
     ]
 });
@@ -60,28 +84,6 @@ $('.section-our-clients__slider').slick({
 //     });
 // });
 
-$(function () {
-    $('ul.tabs').delegate('li:not(.current)', 'click', function () {
-        act(this);
-    })
-    $('.prev').click(function(){
-        var i=$('.current').index();
-        var obj=$('.tabs > li');
-        i=(i<1)? obj.length-1: i-1;
-        act(obj.get(i));
-    });
-    $('.next').click(function(){
-        var i=$('.current').index();
-        var obj=$('.tabs > li');
-        i=++i%obj.length;
-        act(obj.get(i));
-    });
-    function act(Obj){
-        $(Obj).addClass('current').siblings().removeClass('current')
-            .parents('div.section').find('div.box').eq($(Obj).index())
-            .show().siblings('div.box').hide();
-    }
-})
 
 let btnFirst = document.querySelector('#btnOne');
 let btnSecond = document.querySelector('#btnTwo');
@@ -118,6 +120,21 @@ btnThree.addEventListener('click', function () {
     enableModal();
 })
 
+$('.section-course-selection__block-btn-open').click(function() {
+    let id = $(this).attr('data-tab'),
+        content = $('.tab-container[data-tab="'+ id +'"]');
+
+    $('.section-course-selection__block.active').removeClass('active'); // 1
+    $(this).parent().parent().parent().addClass('active'); // 2
+
+    $('.tab-container.active').removeClass('active'); // 3
+    content.addClass('active'); // 4
+});
+
+$('.section-course-selection__block-btn-close').click(function() {
+    $('.section-course-selection__block.active').removeClass('active');
+    $('.tab-container.active').removeClass('active');
+});
 
 $(document).ready(function () {
     $('.link').on('click',function (e) {
@@ -126,3 +143,5 @@ $(document).ready(function () {
         $(tabItem).fadeIn('slow');
     });
 });
+
+$('.carousel').carousel('pause')

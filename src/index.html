@@ -24,7 +24,7 @@
                                     <span>|</span>
                                     <a href="#">info@as-pacific.com</a>
                                 </span>
-                                <button class="navbar-toggler hamburger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler hamburger collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="l1"></span>
                                     <span class="l2"></span>
                                     <span class="l3"></span>
@@ -76,7 +76,7 @@
                         <span class="h1 section-course-selection__title">ВЫБЕРИ СВОЙ КУРС</span>
                     </div>
                     <div class="col-lg-4 mb-4 mb-lg-0">
-                        <div class="section-course-selection__block active">
+                        <div class="section-course-selection__block">
                             <div class="section-course-selection__block-wrapper">
                                 <div class="section-course-selection__block-img">
                                     <i class="student-icon"></i>
@@ -84,8 +84,8 @@
                                 <span class="section-course-selection__block-title">БАЗОВЫЙ</span>
                                 <p class="section-course-selection__block-text">Как разблокировать аккаунт в Wechat, почему Douyin обгоняет Tiktok и какая площадка подойдет для вашего бизнеса и личного бренда.</p>
                                 <button class="btn btn-border-black main-btn section-course-selection__block-btn" id="btnOne">
-                                    <span>Подробнее</span>
-                                    <span class="d-none">Закрыть</span>
+                                    <span class="section-course-selection__block-btn-open" data-tab="1">Подробнее</span>
+                                    <span class="section-course-selection__block-btn-close">Закрыть</span>
                                 </button>
                             </div>
                         </div>
@@ -99,8 +99,8 @@
                                 <span class="section-course-selection__block-title">ПРОДВИНУТЫЙ</span>
                                 <p class="section-course-selection__block-text">Рекламные кабинеты, настройка таргетинга и закупка трафика.</p>
                                 <button class="btn btn-border-black main-btn section-course-selection__block-btn" id="btnTwo">
-                                    <span>Подробнее</span>
-                                    <span class="d-none">Закрыть</span>
+                                    <span class="section-course-selection__block-btn-open" data-tab="2">Подробнее</span>
+                                    <span class="section-course-selection__block-btn-close">Закрыть</span>
                                 </button>
                             </div>
                         </div>
@@ -113,9 +113,9 @@
                                 </div>
                                 <span class="section-course-selection__block-title">КОМПЛЕКСНЫЙ</span>
                                 <p class="section-course-selection__block-text">Самый полный курс по интернет-маркетингу в Китае. Базовый и продвинутый курсы + дополнительный курс по привлечению туристического трафика. </p>
-                                <button class="btn btn-border-black main-btn section-course-selection__block-btn" id="btnThree">
-                                    <span>Подробнее</span>
-                                    <span class="d-none">Закрыть</span>
+                                <button class="btn btn-border-black main-btn section-course-selection__block-btn"  id="btnThree">
+                                    <span class="section-course-selection__block-btn-open" data-tab="3">Подробнее</span>
+                                    <span class="section-course-selection__block-btn-close">Закрыть</span>
                                 </button>
                             </div>
                         </div>
@@ -125,7 +125,7 @@
         </section>
 
         <div class="tab-content-wrapper">
-            <div class="tab-container tab-container_1">
+            <div data-tab="1" class="tab-container tab-container_1">
                 <section class="section section-course-cost">
                     <div class="container">
                         <div class="row">
@@ -263,7 +263,7 @@
                     </div>
                 </section>
             </div>
-            <div class="tab-container tab-container_2">
+            <div data-tab="2" class="tab-container tab-container_2">
                 <section class="section section-course-cost">
                     <div class="container">
                         <div class="row">
@@ -399,7 +399,7 @@
                     </div>
                 </section>
             </div>
-            <div class="tab-container tab-container_3">
+            <div data-tab="3" class="tab-container tab-container_3">
                 <section class="section section-course-cost">
                     <div class="container">
                         <div class="row">
@@ -616,7 +616,7 @@
                         <h2 class="h2 section-program__title">Программы курсов</h2>
                     </div>
                     <div class="col-12">
-                        <div id="carouselExampleIndicators" class="carousel slide section-program__carousel" data-ride="carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide section-program__carousel" data-ride="carousel" data-interval="false">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
                                     <span>Базовый</span>
@@ -629,7 +629,7 @@
                                 </li>
                             </ol>
                             <div class="carousel-inner">
-                                <div class="carousel-item active" data-interval="10000000" >
+                                <div class="carousel-item active" data-interval="false" >
                                     <div class="list-modules">
                                         <span class="list-modules__title">Основные модули</span>
                                         <div class="accordion" id="accordionExample" >
@@ -791,7 +791,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item" data-interval="10000000">
+                                <div class="carousel-item" data-interval="false">
                                     <div class="list-modules">
                                         <span class="list-modules__title">Основные модули</span>
                                         <div class="accordion" id="accordionExample2">
@@ -953,7 +953,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item" data-interval="10000000">
+                                <div class="carousel-item" data-interval="false">
                                     <div class="list-modules">
                                         <span class="list-modules__title">Основные модули</span>
                                         <div class="accordion" id="accordionExample3">

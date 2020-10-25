@@ -20,7 +20,7 @@
     width: calc(100% - 60px);
     height: calc(100% - 56px);
     background: #643755;
-    filter: blur(44px);
+    filter: blur(20px);
     border-radius: 22px;
     z-index: 1;
   }
@@ -212,11 +212,6 @@
 
   .section-course-cost__block-btn {
     width: 250px;
-  }
-
-  .section-course-selection__title {
-    font-size: 36px;
-    line-height: normal;
   }
 
   .section-course-selection__block-title {

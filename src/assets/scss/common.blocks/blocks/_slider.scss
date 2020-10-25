@@ -184,6 +184,31 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .section-our-clients__slider {
+    .slick-prev {
+      left: -40px;
+    }
+
+    .slick-next {
+      right: -40px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .section-our-clients__slider {
+    .slick-prev {
+      left: 0;
+    }
+
+    .slick-next {
+      right: 0;
+    }
+  }
+}
+
+
 @media (max-width: 1199.98px) {
   .sliderSecond__imgWrap {
     height: 100%;

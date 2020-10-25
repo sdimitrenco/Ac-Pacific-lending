@@ -45,6 +45,7 @@
       top: 100%;
       right: 16px;
       width: 210px;
+      box-shadow: 0 0 29px rgba(0,0,0,.3);
     }
   }
 
@@ -121,5 +122,31 @@
       transform: rotate(45deg);
       top: 13px;
     }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header {
+    padding-top: 0;
+  }
+
+  .header__navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header__navbar .navbar-collapse {
+    right: 0;
+  }
+}
+
+@media (max-width: 470px) {
+  .header .navbar-brand {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .navbar-brand span {
+    display: none;
   }
 }

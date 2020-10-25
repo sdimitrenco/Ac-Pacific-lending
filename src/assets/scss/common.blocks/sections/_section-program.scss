@@ -153,4 +153,13 @@
     flex-direction: column;
     display: inline-flex;
   }
+
+  .section-program__carousel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-program__carousel .carousel-indicators li {
+    text-align: center;
+  }
 }

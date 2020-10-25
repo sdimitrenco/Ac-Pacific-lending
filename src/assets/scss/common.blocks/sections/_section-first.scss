@@ -90,6 +90,17 @@
   }
 }
 
+@media (max-width: 767.98px) {
+  .section-first__subTitle {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .section.section-first {
+    padding-top: 20px;
+  }
+}
+
 @media (max-width: 575.98px) {
   .section-first {
     padding-bottom: 10px;

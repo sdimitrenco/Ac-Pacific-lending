@@ -57,7 +57,6 @@
       background: url("../img/guru-master-black.svg") no-repeat center;
       background-size: 100% auto;
     }
-
   }
 
   &:before {
@@ -71,6 +70,17 @@
     border-radius: 22px;
     width: calc(100% - 40px);
     height: 38px;
+  }
+
+  &.active:after {
+    content: '';
+    background: #ffffff;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
   }
 }
 
@@ -118,4 +128,38 @@
   margin-top: auto;
   width: 239px;
   height: 56px;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.section-course-selection__block-btn .section-course-selection__block-btn-close {
+  display: none;
+}
+
+.section-course-selection__block.active {
+  .section-course-selection__block-btn-close {
+    display: flex;
+  }
+  
+  .section-course-selection__block-btn-open {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .section-course-selection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .section-course-selection__title {
+    font-size: 26px;
+  }
 }
