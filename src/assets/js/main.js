@@ -1,6 +1,7 @@
 import './config/jqueryLoad';
 import 'bootstrap/dist/js/bootstrap.min';
 import 'slick-carousel/slick/slick.min';
+import 'lazysizes';
 
 
 $('.sliderFirst').slick({

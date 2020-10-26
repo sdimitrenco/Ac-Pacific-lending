@@ -66,7 +66,7 @@ function html() {
 
 function img() {
 	return gulp.src('src/assets/img/**/*.*')
-		// .pipe(imagemin())
+		.pipe(imagemin())
 		.pipe(gulp.dest('build/assets/img'))
 }
 
