@@ -237,7 +237,7 @@ $('.section-course-selection__block-btn-open').click(function() {
     $('.tab-container.testClass').removeClass('testClass'); // 3
     setTimeout(function(){
         content.addClass('active')
-    },300)
+    },200)
     content.addClass('testClass'); // 4
 });
 
@@ -245,7 +245,7 @@ $('.section-course-selection__block-btn-close').click(function() {
     $('.section-course-selection__block.active').removeClass('active');
     setTimeout(function(){
         $('.tab-container.testClass').removeClass('testClass'); // 3
-    },300)
+    },400)
     $('.tab-container.active').removeClass('active')
 });
 

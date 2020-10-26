@@ -30,7 +30,6 @@
     width: 100%;
     opacity: 0;
     transition: 0.3s;
-    transition-delay: .5s;
     z-index: 1;
   }
 
@@ -104,7 +103,6 @@
     width: calc(100% - 40px);
     height: 38px;
     transition: 0.3s;
-    transition-delay: .5s;
   }
 
   &.active:after {
