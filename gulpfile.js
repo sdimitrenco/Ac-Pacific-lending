@@ -19,7 +19,7 @@ const browserSync = require('browser-sync').create();
 
 function styles() {
 
-	return gulp.src('src/assets/scss/style.scss')
+	return gulp.src('src/assets_landing/scss/style.scss')
 		.pipe(plumber())
 		.pipe(sourcemap.init())
 		.pipe(sass())
@@ -32,27 +32,27 @@ function styles() {
 			level: 2
 		}))
 		.pipe(sourcemap.write('./'))
-		.pipe(gulp.dest('build/assets/css'))
+		.pipe(gulp.dest('build/assets_landing/css'))
 		.pipe(browserSync.stream());
 }
 
 function scripts() {
 	return gulp.src([
-		'src/assets/js/main.js'
+		'src/assets_landing/js/main.js'
 	])
 		.pipe(rollup({ plugins: [babel(), resolve(), commonjs()] }, 'umd'))
 		.pipe(concat('libs.min.js'))
 		.pipe(plumber())
 		.pipe(rigger())
-		.pipe(gulp.dest('build/assets/js'))
+		.pipe(gulp.dest('build/assets_landing/js'))
 		.pipe(terser())
-		.pipe(gulp.dest('build/assets/js'))
+		.pipe(gulp.dest('build/assets_landing/js'))
 		.pipe(browserSync.stream());
 }
 
 function script() {
-	return gulp.src('src/assets/js/libs/**/*.js')
-		.pipe(gulp.dest('build/assets/js/libs'))
+	return gulp.src('src/assets_landing/js/libs/**/*.js')
+		.pipe(gulp.dest('build/assets_landing/js/libs'))
 
 }
 
@@ -65,26 +65,26 @@ function html() {
 }
 
 function img() {
-	return gulp.src('src/assets/img/**/*.*')
+	return gulp.src('src/assets_landing/img/**/*.*')
 		.pipe(imagemin())
-		.pipe(gulp.dest('build/assets/img'))
+		.pipe(gulp.dest('build/assets_landing/img'))
 }
 
 function fonts() {
-	return gulp.src('src/assets/fonts/**/*.*')
-		.pipe(gulp.dest('build/assets/fonts'))
+	return gulp.src('src/assets_landing/fonts/**/*.*')
+		.pipe(gulp.dest('build/assets_landing/fonts'))
 
 }
 
 function og() {
-	return gulp.src('src/assets/og/**/*.*')
-		.pipe(gulp.dest('build/assets/og'))
+	return gulp.src('src/assets_landing/og/**/*.*')
+		.pipe(gulp.dest('build/assets_landing/og'))
 
 }
 
 function favicons() {
-	return gulp.src('src/assets/favicons/**/*.*')
-		.pipe(gulp.dest('build/assets/favicons'))
+	return gulp.src('src/assets_landing/favicons/**/*.*')
+		.pipe(gulp.dest('build/assets_landing/favicons'))
 
 }
 
@@ -99,13 +99,13 @@ function watch() {
 		}
 	});
 
-	gulp.watch('src/assets/scss/**/*.scss', styles)
-	gulp.watch('src/assets/js/**/*.js', scripts)
+	gulp.watch('src/assets_landing/scss/**/*.scss', styles)
+	gulp.watch('src/assets_landing/js/**/*.js', scripts)
 	gulp.watch('src/*.html', html)
-	gulp.watch('src/assets/img/**/*.*', img)
-	gulp.watch('src/assets/fonts/**/*.*', fonts)
-	gulp.watch('src/assets/og/**/*.*', og)
-	gulp.watch('src/assets/og/**/*.*', favicons)
+	gulp.watch('src/assets_landing/img/**/*.*', img)
+	gulp.watch('src/assets_landing/fonts/**/*.*', fonts)
+	gulp.watch('src/assets_landing/og/**/*.*', og)
+	gulp.watch('src/assets_landing/og/**/*.*', favicons)
 	gulp.watch("*.html").on('change', browserSync.reload);
 }
 
