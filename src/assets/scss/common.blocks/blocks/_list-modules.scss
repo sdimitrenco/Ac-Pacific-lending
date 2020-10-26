@@ -41,9 +41,7 @@
     position: relative;
 
     &:before {
-      content: '+';
-      background: #FFFFFF;
-      border: 1px solid #663755;
+      content: '';
       width: 31px;
       height: 31px;
       display: flex;
@@ -54,16 +52,15 @@
       top: 50%;
       transform: translateY(-50%);
       border-radius: 50%;
-
-      font-size: 24px;
-      font-weight: normal;
-      line-height: 29px;
-      color: #000000;
+      background: url("../img/plus.svg") no-repeat center;
+      background-size: 100% auto;
     }
+
 
     &:not(.collapsed) {
       &:before {
-        content: '-';
+        background: url("../img/minus.svg") no-repeat center;
+        background-size: 100% auto;
       }
     }
 
