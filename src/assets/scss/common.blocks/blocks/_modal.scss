@@ -58,6 +58,23 @@
   margin-top: 34px;
 }
 
+.modal-close {
+  position: absolute;
+  top: 13px;
+  right: 11px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+
+  &:focus,
+  &:hover,
+  &:active {
+    box-shadow: none;
+    border: none;
+    outline: none;
+  }
+}
+
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 558px;
