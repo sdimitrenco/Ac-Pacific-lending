@@ -189,10 +189,13 @@ let btnFlagThree = false;
 
 function enableModal() {
     if (btnFlagOne === true && btnFlagTwo === true && btnFlagThree === true) {
-        $('#exampleModal').modal('toggle')
-        btnFlagOne = false;
-        btnFlagTwo = false;
-        btnFlagThree = false;
+        setTimeout(function(){
+            $('#exampleModal').modal('toggle')
+            btnFlagOne = false;
+            btnFlagTwo = false;
+            btnFlagThree = false;
+        },3000)
+
     }
 
 }
@@ -200,31 +203,37 @@ function enableModal() {
 btnFirst.addEventListener('click', function () {
     btnFlagOne = true;
     enableModal();
+    $('.carousel-indicators__1').trigger('click');
 })
 
 btnSecond.addEventListener('click', function () {
     btnFlagTwo = true;
     enableModal();
+    $('.carousel-indicators__2').trigger('click');
 })
 
 btnThree.addEventListener('click', function () {
     btnFlagThree = true;
     enableModal();
+    $('.carousel-indicators__3').trigger('click');
 })
 
 btnFirstMob.addEventListener('click', function () {
     btnFlagOne = true;
     enableModal();
+    $('.carousel-indicators__1').trigger('click');
 })
 
 btnSecondMob.addEventListener('click', function () {
     btnFlagTwo = true;
     enableModal();
+    $('.carousel-indicators__2').trigger('click');
 })
 
 btnThreeMob.addEventListener('click', function () {
     btnFlagThree = true;
     enableModal();
+    $('.carousel-indicators__3').trigger('click');
 })
 
 $('.section-course-selection__block-btn-open').click(function() {

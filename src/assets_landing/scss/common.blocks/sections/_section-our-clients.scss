@@ -36,6 +36,15 @@
   }
 }
 
+.section-our-clients__text {
+  font-size: 20px;
+  line-height: 21px;
+  text-align: center;
+  color: #444;
+  display: block;
+  margin-bottom: 24px;
+}
+
 @media (max-width: 1300px) {
   .section-our-clients__slider {
     padding-left: 50px;
@@ -44,7 +53,8 @@
 }
 
 @media (max-width: 767.98px) {
-  .section-our-clients__subtitle {
+  .section-our-clients__subtitle,
+  .section-our-clients__text {
     font-size: 16px;
     line-height: normal;
   }
