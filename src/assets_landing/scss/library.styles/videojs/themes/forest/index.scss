@@ -8,22 +8,23 @@
 .vjs-theme-forest:hover .vjs-big-play-button,
 .vjs-theme-forest.vjs-big-play-button:focus {
   background-color: transparent;
-  background: svg-load('img/play-btn.svg', fill=#6fb04e);
+  background-image: url("../img/play-btn.svg");
+  opacity: 1;
 }
 
 .vjs-theme-forest .vjs-big-play-button {
   width: 88px;
   height: 88px;
-  background: none;
   background-repeat: no-repeat;
   background-position: center;
-  background: svg-load('img/play-btn.svg', fill=#fff);
+  background-image: url("../img/play-btn.svg");
   border: none;
   top: 50%;
   left: 50%;
   margin-top: -44px;
   margin-left: -44px;
   color: purple;
+  opacity: 0.8;
 }
 
 .vjs-theme-forest .vjs-big-play-button .vjs-icon-placeholder {
