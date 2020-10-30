@@ -75,6 +75,7 @@
 .section-first__btnContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-left: -8px;
   margin-right: -8px;
 }
@@ -97,7 +98,7 @@
   }
 
   .section.section-first {
-    padding-top: 20px;
+    padding-top: 0px;
   }
 }
 
