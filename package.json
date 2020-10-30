@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
+    "@videojs/themes": "^1.0.1",
     "browserslist": "^4.8.3",
     "caniuse-lite": "^1.0.30001035",
     "del": "^3.0.0",
