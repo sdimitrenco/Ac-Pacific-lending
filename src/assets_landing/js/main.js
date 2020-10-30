@@ -8,9 +8,6 @@ var player1 = videojs('my-video1');
 var player2 = videojs('my-video2');
 var player3 = videojs('my-video3');
 
-var playerMob1 = videojs('my-video1-mob');
-var playerMob2 = videojs('my-video2-mob');
-var playerMob3 = videojs('my-video3-mob');
 
 
 $('.sliderFirst').slick({
