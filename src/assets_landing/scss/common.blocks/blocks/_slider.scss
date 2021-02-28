@@ -2,13 +2,13 @@
   font-weight: bold;
   font-size: rem(18);
   line-height: rem(22);
-  color: #444444;
+  color: #FFFFFF;
 }
 
 .sliderFirst__subTitle {
   font-size: rem(16);
   line-height: rem(19);
-  color: #444444;
+  color: #FFFFFF;
   margin-bottom: 11px;
   display: block;
 }
@@ -16,7 +16,7 @@
 .sliderFirst__text {
   font-size: rem(16);
   line-height: rem(19);
-  color: #999999;
+  color: #FFFFFF;
   margin-bottom: 0;
   display: block;
 }
@@ -33,8 +33,7 @@
 }
 
 .sliderFirst__item {
-  background: #FFFFFF;
-  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 90.32%);
   border-radius: 10px;
   max-width: 357px;
   width: 100%;
@@ -42,6 +41,7 @@
   margin-right: 15px;
   opacity: 0.5;
   height: auto;
+  min-height: 736px;
 
    &:focus {
      outline: none;

@@ -1,16 +1,21 @@
 import './config/jqueryLoad';
 import 'bootstrap/dist/js/bootstrap.min';
 import 'slick-carousel/slick/slick.min';
+import '@fancyapps/fancybox/dist/jquery.fancybox.min';
 import 'lazysizes';
-import videojs from 'video.js/dist/video.min';
+// import videojs from 'video.js/dist/video.min';
+//
+// var player1 = videojs('my-video1');
+// var player2 = videojs('my-video2');
+// var player3 = videojs('my-video3');
+//
+// var playerMob1 = videojs('my-video1-mob');
+// var playerMob2 = videojs('my-video2-mob');
+// var playerMob3 = videojs('my-video3-mob');
 
-var player1 = videojs('my-video1');
-var player2 = videojs('my-video2');
-var player3 = videojs('my-video3');
-
-var playerMob1 = videojs('my-video1-mob');
-var playerMob2 = videojs('my-video2-mob');
-var playerMob3 = videojs('my-video3-mob');
+$('[data-fancybox="gallery"]').fancybox({
+    // Options will go here
+});
 
 
 $('.sliderFirst').slick({
@@ -186,64 +191,64 @@ $(document).ready(function(){
 });
 
 
-let btnFirst = document.querySelector('#btnOne');
-let btnSecond = document.querySelector('#btnTwo');
-let btnThree = document.querySelector('#btnThree');
-let btnFirstMob = document.querySelector('#btnOneMob');
-let btnSecondMob = document.querySelector('#btnTwoMob');
-let btnThreeMob = document.querySelector('#btnThreeMob');
-let btnFlagOne = false;
-let btnFlagTwo = false;
-let btnFlagThree = false;
+// let btnFirst = document.querySelector('#btnOne');
+// let btnSecond = document.querySelector('#btnTwo');
+// let btnThree = document.querySelector('#btnThree');
+// let btnFirstMob = document.querySelector('#btnOneMob');
+// let btnSecondMob = document.querySelector('#btnTwoMob');
+// let btnThreeMob = document.querySelector('#btnThreeMob');
+// let btnFlagOne = false;
+// let btnFlagTwo = false;
+// let btnFlagThree = false;
+//
+// function enableModal() {
+//     if (btnFlagOne === true && btnFlagTwo === true && btnFlagThree === true) {
+//         setTimeout(function(){
+//             $('#exampleModal').modal('toggle')
+//             btnFlagOne = false;
+//             btnFlagTwo = false;
+//             btnFlagThree = false;
+//         },3000)
+//
+//     }
+//
+// }
 
-function enableModal() {
-    if (btnFlagOne === true && btnFlagTwo === true && btnFlagThree === true) {
-        setTimeout(function(){
-            $('#exampleModal').modal('toggle')
-            btnFlagOne = false;
-            btnFlagTwo = false;
-            btnFlagThree = false;
-        },3000)
+// btnFirst.addEventListener('click', function () {
+//     btnFlagOne = true;
+//     enableModal();
+//     $('.carousel-indicators__1').trigger('click');
+// })
+//
+// btnSecond.addEventListener('click', function () {
+//     btnFlagTwo = true;
+//     enableModal();
+//     $('.carousel-indicators__2').trigger('click');
+// })
 
-    }
-
-}
-
-btnFirst.addEventListener('click', function () {
-    btnFlagOne = true;
-    enableModal();
-    $('.carousel-indicators__1').trigger('click');
-})
-
-btnSecond.addEventListener('click', function () {
-    btnFlagTwo = true;
-    enableModal();
-    $('.carousel-indicators__2').trigger('click');
-})
-
-btnThree.addEventListener('click', function () {
-    btnFlagThree = true;
-    enableModal();
-    $('.carousel-indicators__3').trigger('click');
-})
-
-btnFirstMob.addEventListener('click', function () {
-    btnFlagOne = true;
-    enableModal();
-    $('.carousel-indicators__1').trigger('click');
-})
-
-btnSecondMob.addEventListener('click', function () {
-    btnFlagTwo = true;
-    enableModal();
-    $('.carousel-indicators__2').trigger('click');
-})
-
-btnThreeMob.addEventListener('click', function () {
-    btnFlagThree = true;
-    enableModal();
-    $('.carousel-indicators__3').trigger('click');
-})
+// btnThree.addEventListener('click', function () {
+//     btnFlagThree = true;
+//     enableModal();
+//     $('.carousel-indicators__3').trigger('click');
+// })
+//
+// btnFirstMob.addEventListener('click', function () {
+//     btnFlagOne = true;
+//     enableModal();
+//     $('.carousel-indicators__1').trigger('click');
+// })
+//
+// btnSecondMob.addEventListener('click', function () {
+//     btnFlagTwo = true;
+//     enableModal();
+//     $('.carousel-indicators__2').trigger('click');
+// })
+//
+// btnThreeMob.addEventListener('click', function () {
+//     btnFlagThree = true;
+//     enableModal();
+//     $('.carousel-indicators__3').trigger('click');
+// })
 
 $('.section-course-selection__block-btn-open').click(function() {
     let id = $(this).attr('data-tab'),

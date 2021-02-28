@@ -34,7 +34,15 @@ main {
 }
 
 .bg-color {
+  background: rgba(30, 32, 60, 0.7);
+}
+
+.bg-color-2 {
   background: linear-gradient(180deg, #663755 3.04%, #1E203C 100%);
+}
+
+.bg-color-3 {
+  background: linear-gradient(96.78deg, #FFF0FC 10.9%, #FFF7FD 38.91%, #F7ECFF 64.8%, #F4F3FF 93.74%);
 }
 
 .form-control {
@@ -52,13 +60,70 @@ main {
   }
 }
 
-//.tab-container {
-//  display: none;
-//}
-
 .video-js {
   max-height: 100% !important;
   height: 100%;
+}
+
+.bg-linear-gradient-1 {
+  background: $linear-gradient-1;
+}
+
+.bg-linear-gradient-2 {
+  background: $linear-gradient-2;
+}
+
+.bg-linear-gradient-3 {
+  background: $linear-gradient-3;
+}
+
+.bg-linear-gradient-4 {
+  background: $linear-gradient-4;
+}
+
+.bg-linear-gradient-5 {
+  background: $linear-gradient-5;
+}
+
+.bg-linear-gradient-6 {
+  background: $linear-gradient-6;
+}
+
+.bg-linear-gradient-7 {
+  background: $linear-gradient-7;
+}
+
+.bg-linear-gradient-8 {
+  background: $linear-gradient-8;
+}
+
+.bg-linear-gradient-9 {
+  background: $linear-gradient-9;
+}
+
+.bg-linear-gradient-10 {
+  background: $linear-gradient-10;
+}
+
+.bg-linear-gradient-11 {
+  background: $linear-gradient-11;
+}
+
+.bg-linear-gradient-12 {
+  background: $linear-gradient-12;
+}
+
+.bg-linear-gradient-13 {
+  background: $linear-gradient-13;
+}
+
+.bg-linear-gradient-14 {
+  background: $linear-gradient-14;
+}
+
+.bg-footer {
+  background: url("../img/bg-footer.jpg") no-repeat center;
+  background-size: cover;
 }
 
 @media (min-width: 1200px) {

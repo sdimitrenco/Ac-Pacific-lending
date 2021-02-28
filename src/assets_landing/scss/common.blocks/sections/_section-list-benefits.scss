@@ -1,0 +1,18 @@
+.list-benefits-section {
+  padding-top: 43px;
+}
+
+.list-benefits-section .row > div:not(:last-child) {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    right: 0;
+    height: 51px;
+    opacity: 0.5;
+    border-right: 1px solid #593351;
+  }
+}

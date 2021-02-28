@@ -11,10 +11,38 @@
   margin-bottom: 35px;
 }
 
+.section-course-selection__block-ul {
+  margin-bottom: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.section-course-selection__block-li {
+  margin-bottom: 10px;
+
+  p {
+    font-size: rem(15);
+    line-height: rem(18);
+    color: #FFFFFF;
+    margin-bottom: 0;
+  }
+}
+
+.section-course-selection__block-subTitle {
+  font-weight: bold;
+  font-size: rem(18);
+  line-height: rem(24);
+  text-align: center;
+  color: #FCFCFC;
+  min-height: 48px;
+  margin-bottom: 14px;
+}
+
 .section-course-selection__block {
   box-shadow: 0 10px 20px rgba(30, 32, 59, 0.3);
   border-radius: 10px;
   height: 100%;
+  min-height: 723px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -92,17 +120,17 @@
   }
 
   &:before {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #643755;
-    filter: blur(35px);
-    border-radius: 22px;
-    width: calc(100% - 40px);
-    height: 38px;
-    transition: 0.3s;
+    //content: '';
+    //position: absolute;
+    //bottom: -10px;
+    //left: 50%;
+    //transform: translateX(-50%);
+    //background: #643755;
+    //filter: blur(35px);
+    //border-radius: 22px;
+    //width: calc(100% - 40px);
+    //height: 38px;
+    //transition: 0.3s;
   }
 
   &.active:after {
@@ -145,16 +173,6 @@
   }
 }
 
-.section-course-selection__block-wrapper-1 {
-  background: linear-gradient(214.55deg, #663755 6.81%, #1E203C 85.31%);
-}
-.section-course-selection__block-wrapper-2 {
-  background: linear-gradient(180deg, #663755 3.04%, #1E203C 100%);
-}
-.section-course-selection__block-wrapper-3 {
-  background: linear-gradient(145.05deg, #663755 8.81%, #1E203C 86.93%);
-}
-
 .section-course-selection__block-img {
   width: 120px;
   height: 120px;
@@ -173,7 +191,7 @@
   text-align: center;
   color: #FFFFFF;
   display: block;
-  margin-bottom: 19px;
+  margin-bottom: 7px;
 }
 
 .section-course-selection__block-text {
@@ -213,6 +231,23 @@
 
 .section-course-selection__mobil {
   display: none;
+}
+
+.section-course-selection__block-btnVideo {
+  background: rgba(15, 15, 15, .1);
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  height: 50px;
+  width: 100%;
+
+  &:hover {
+    background: rgba(15, 15, 15, .5);
+    color: #FFFFFF;
+  }
 }
 
 @media (max-width: 991.98px) {

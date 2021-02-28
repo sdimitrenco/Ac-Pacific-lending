@@ -3,7 +3,9 @@
 @import "node_modules/slick-carousel/slick/slick.scss";
 @import "node_modules/slick-carousel/slick/slick-theme.scss";
 @import "node_modules/video.js/src/css/video-js";
+@import "library.styles/fancybox/jquery.fancybox";
 @import "library.styles/videojs/themes/forest/index";
+
 
 //MIXINS
 @import "common.blocks/utils/mixins";
@@ -32,8 +34,14 @@
 @import "common.blocks/sections/section-helpChoosing";
 @import "common.blocks/sections/section-questions";
 @import "common.blocks/sections/section-course-cost";
-@import "common.blocks/sections/section-what-learned";
 @import "common.blocks/sections/section-our-clients";
+@import "common.blocks/sections/section-list-benefits";
+@import "common.blocks/sections/section-complex-plus";
+@import "common.blocks/sections/section-other-projects";
+@import "common.blocks/sections/section-solutions-corporate-clients";
+@import "common.blocks/sections/section-application";
+@import "common.blocks/sections/section-module-program";
+@import "common.blocks/sections/section-teaser";
 
 //BLOCKS
 @import "common.blocks/blocks/icons/icons";
@@ -41,6 +49,10 @@
 @import "common.blocks/blocks/list-modules";
 @import "common.blocks/blocks/modal";
 @import "common.blocks/blocks/tab";
+@import "common.blocks/blocks/media-container";
+@import "common.blocks/blocks/topic-block";
+@import "common.blocks/blocks/module-program-block";
+@import "common.blocks/blocks/suitable-course-block";
 
 //main styles
 @import "common.blocks/utils/common";

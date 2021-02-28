@@ -1,5 +1,6 @@
 .section-course-cost {
   padding-top: 55px;
+  padding-bottom: 30px;
   background: #ffffff;
   position: relative;
   z-index: 10;
@@ -105,6 +106,44 @@
   padding-top: 40px;
   padding-bottom: 67px;
   min-height: 345px;
+}
+
+.section-course-cost__block-caption {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #CC1237;
+  display: block;
+  margin-top: 5px;
+}
+
+.section-course-cost__priceWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-course-cost__priceOld {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-course-cost__oldPrice {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #777777;
+  position: relative;
+}
+
+.section-course-cost__percent {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: right;
+  color: #CC1237;
 }
 
 .section-course-cost__text {

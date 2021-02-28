@@ -69,19 +69,38 @@
 }
 
 .section-first__wrapper {
-  padding-top: 90px;
+  padding-top: 23px;
+}
+
+.section-first__block {
+  margin-bottom: 33px;
+}
+
+.section-first__stepBack {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  span {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
 }
 
 .section-first__btnContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-left: -8px;
   margin-right: -8px;
 }
 
 .header__button {
-  width: 263px;
+  width: 251px;
   height: 50px;
   margin-left: 8px;
   margin-right: 8px;

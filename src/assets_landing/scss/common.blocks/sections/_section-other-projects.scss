@@ -1,0 +1,27 @@
+.section-other-projects {
+  padding-top: 117px;
+  padding-bottom: 30px;
+}
+
+.section-other-projects__title {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+.section-other-projects__subtitle {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 21px;
+  text-align: center;
+  color: #444444;
+  max-width: 921px;
+  margin-left: auto;
+  margin-right: auto;
+
+  a {
+    color: #444444;
+    text-decoration: underline;
+    text-decoration-color: #761A56;
+  }
+}
