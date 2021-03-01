@@ -121,6 +121,259 @@ main {
   background: $linear-gradient-14;
 }
 
+.shadowColor-1 {
+  &:before {
+    background: #269885;
+  }
+
+  &.active {
+    .section-course-selection__block-img {
+      border-color: #3BBF78;
+    }
+
+    .section-course-selection__block-btn {
+      border-color: #3BBF78;
+      color: #3BBF78;
+    }
+  }
+
+  &.active:before {
+      background: #269885;
+  }
+}
+
+.shadowColor-2 {
+  &:before {
+    background: #FE7500;
+  }
+
+  &.active:before {
+      background: #FE7500;
+  }
+
+  &.active {
+    .section-course-selection__block-img {
+      border-color: #FE7500;
+    }
+
+    .section-course-selection__block-btn {
+      border-color: #FE7500;
+      color: #FE7500;
+    }
+  }
+}
+
+.shadowColor-3 {
+
+  &:before {
+    background: #4D1260;
+  }
+
+  &.active:before {
+      background: #4D1260;
+  }
+
+  &.active {
+    .section-course-selection__block-img {
+      border-color: #4D1260;
+    }
+
+    .section-course-selection__block-btn {
+      border-color: #4D1260;
+      color: #4D1260;
+    }
+  }
+}
+
+.shadowColor-4 {
+  &:before {
+    background: #B02B3C;
+  }
+
+  &.active:before {
+    background: #B02B3C;
+  }
+
+  &.active {
+    .section-course-selection__block-img {
+      border-color: #B02B3C;
+    }
+
+    .section-course-selection__block-btn {
+      border-color: #B02B3C;
+      color: #B02B3C;
+    }
+  }
+}
+
+.shadowColor-5 {
+  &:before {
+    background: #209BD0;
+  }
+
+  &.active:before {
+    background: #209BD0;
+  }
+
+  &.active {
+    .section-course-selection__block-img {
+      border-color: #209BD0;
+    }
+
+    .section-course-selection__block-btn {
+      border-color: #209BD0;
+      color: #209BD0;
+    }
+  }
+}
+
+.shadowColor-6 {
+  &:before {
+    background: #2C2E7E;
+  }
+
+  &.active:before {
+    background: #2C2E7E;
+  }
+
+  &.active {
+    .section-course-selection__block-img {
+      border-color: #2C2E7E;
+    }
+
+    .section-course-selection__block-btn {
+      border-color: #2C2E7E;
+      color: #2C2E7E;
+    }
+  }
+}
+
+.shadowColor-7 {
+  &:before {
+    background: #4D1260;
+  }
+
+  &.active:before {
+    background: #4D1260;
+  }
+
+  &.active {
+    .section-course-selection__block-img {
+      border-color: #4D1260;
+    }
+
+    .section-course-selection__block-btn {
+      border-color: #4D1260;
+      color: #4D1260;
+    }
+  }
+}
+
+.shadowColor-8 {
+  &:before {
+    background: #2C2E7E;
+  }
+
+  &.active:before {
+    background: #2C2E7E;
+  }
+
+  &.active {
+    .section-course-selection__block-img {
+      border-color: #2C2E7E;
+    }
+
+    .section-course-selection__block-btn {
+      border-color: #2C2E7E;
+      color: #2C2E7E;
+    }
+  }
+}
+
+.shadowColor-9 {
+  &:before {
+    background: #C11C7F;
+  }
+
+  &.active:before {
+    background: #C11C7F;
+  }
+
+  &.active {
+    .section-course-selection__block-img {
+      border-color: #C11C7F;
+    }
+
+    .section-course-selection__block-btn {
+      border-color: #C11C7F;
+      color: #C11C7F;
+    }
+  }
+}
+
+.shadowColor-10 {
+  &:before {
+    background: #C11C7F;
+  }
+
+  &.active:before {
+    background: #C11C7F;
+  }
+
+  &.active {
+    .section-course-selection__block-img {
+      border-color: #C11C7F;
+    }
+
+    .section-course-selection__block-btn {
+      border-color: #C11C7F;
+      color: #C11C7F;
+    }
+  }
+}
+
+.shadowColor-11 {
+  &:before {
+    background: #211DBE
+  }
+
+  &.active:before {
+    background: #211DBE
+  }
+
+  &.active {
+    .section-course-selection__block-img {
+      border-color: #211DBE;
+    }
+
+    .section-course-selection__block-btn {
+      border-color: #211DBE;
+      color: #211DBE;
+    }
+  }
+}
+
+.shadowColor-12 {
+  &:before {
+    background: #1DBEB5
+  }
+
+  &.active:before {
+    background: #1DBEB5
+  }
+
+  &.active {
+    .section-course-selection__block-img {
+      border-color: #1DBEB5;
+    }
+
+    .section-course-selection__block-btn {
+      border-color: #1DBEB5;
+      color: #1DBEB5;
+    }
+  }
+}
+
 .bg-footer {
   background: url("../img/bg-footer.jpg") no-repeat center;
   background-size: cover;

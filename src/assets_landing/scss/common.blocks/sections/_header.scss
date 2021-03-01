@@ -58,11 +58,13 @@
   .hamburger {
     box-shadow: none;
     outline: none;
-    border: none;
-    height: 27px;
-    width: 31px;
     padding: 0;
     position: relative;
+    border: 1px solid;
+    border-color: #D8D8D8 !important;
+    border-radius: 9px;
+    width: 33px;
+    height: 33px;
 
     span {
       transition: 0.3s;
@@ -71,36 +73,38 @@
     &:focus {
       box-shadow: none;
       outline: none;
-      border: none;
     }
 
     .l1 {
       position: absolute;
-      top: 4px;
-      left: 0;
-      height: 3px;
+      top: 33%;
+      transform: translateY(-50%);
+      left: 7px;
+      height: 2px;
       background: #fff;
-      width: 30px;
+      width: 15px;
       border-radius: 1px;
     }
 
     .l2 {
       position: absolute;
-      top: 11px;
-      left: 0;
-      height: 3px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 7px;
+      height: 2px;
       background: #fff;
-      width: 30px;
+      width: 15px;
       border-radius: 1px;
     }
 
     .l3 {
       position: absolute;
-      top: 18px;
-      left: 0;
-      height: 3px;
+      top: 68%;
+      transform: translateY(-50%);
+      left: 7px;
+      height: 2px;
       background: #fff;
-      width: 30px;
+      width: 15px;
       border-radius: 1px;
     }
   }
@@ -112,7 +116,7 @@
 
     .l1 {
       transform: rotate(-45deg);
-      top: 13px;
+      top: 15px;
     }
 
     .l2 {
@@ -121,7 +125,7 @@
 
     .l3 {
       transform: rotate(45deg);
-      top: 13px;
+      top: 15px;
     }
   }
 }

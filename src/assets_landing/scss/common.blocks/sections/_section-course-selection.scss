@@ -12,19 +12,128 @@
 }
 
 .section-course-selection__block-ul {
-  margin-bottom: 0;
+  margin-bottom: 31px;
   list-style-type: none;
   width: 100%;
+  margin-top: 20px;
 }
 
 .section-course-selection__block-li {
   margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+
+  &:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 9px;
+    height: 3px;
+    border-radius: 20%;
+    background: #FFFFFF;
+  }
 
   p {
-    font-size: rem(15);
-    line-height: rem(18);
+    font-size: rem(16);
+    line-height: rem(24);
     color: #FFFFFF;
     margin-bottom: 0;
+  }
+}
+
+.ul-v1 {
+  p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+.ul-v2 {
+  margin-top: 36px;
+
+  .section-course-selection__block-li {
+    margin-bottom: 30px;
+
+    p {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.ul-v3 {
+  .section-course-selection__block-li {
+    margin-bottom: 33px;
+  }
+}
+
+.ul-v4 {
+  margin-top: 37px;
+
+  .section-course-selection__block-li {
+    margin-bottom: 25px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+.ul-v5 {
+  margin-top: 24px;
+
+  p {
+    font-size: 16px;
+  }
+
+  .section-course-selection__block-li {
+    margin-bottom: 12px;
+  }
+}
+
+.ul-v6 {
+  margin-top: 31px;
+
+  p {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+
+  .section-course-selection__block-li {
+    margin-bottom: 37px;
+  }
+}
+
+.ul-v7 {
+  margin-top: 30px;
+
+  p {
+    font-size: 16px;
+  }
+
+  .section-course-selection__block-li {
+    margin-bottom: 25px;
+  }
+}
+
+.ul-v8 {
+  margin-top: 26px;
+
+  p {
+    font-size: 16px;
+  }
+
+  .section-course-selection__block-li {
+    margin-bottom: 14px;
   }
 }
 
@@ -92,6 +201,29 @@
       transition: color 0.3s;
     }
 
+    .section-course-selection__block-li p {
+      color: #333333;
+      transition: color 0.3s;
+    }
+
+    .section-course-selection__block-li:before {
+      background: #333333;
+    }
+
+    .section-course-selection__block-btnVideo {
+      color: #333333;
+    }
+
+    .youtube-icon {
+      background: url("../img/youtube-black-icon.svg") no-repeat center;
+      background-size: 100% auto;
+    }
+
+    .section-course-selection__block-subTitle {
+      color: #333333;
+      transition: color 0.3s;
+    }
+
     .section-course-selection__block-text {
       color: #777777;
       transition: color 0.3s;
@@ -120,17 +252,17 @@
   }
 
   &:before {
-    //content: '';
-    //position: absolute;
-    //bottom: -10px;
-    //left: 50%;
-    //transform: translateX(-50%);
-    //background: #643755;
-    //filter: blur(35px);
-    //border-radius: 22px;
-    //width: calc(100% - 40px);
-    //height: 38px;
-    //transition: 0.3s;
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(77, 18, 96, .5);
+    filter: blur(20px);
+    border-radius: 22px;
+    width: calc(100% - 40px);
+    height: 10px;
+    transition: 0.3s;
   }
 
   &.active:after {
@@ -144,7 +276,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 33px 30px 57px 30px;
+  padding: 33px 30px 31px 30px;
   height: 100%;
   min-height: 490px;
   border-radius: 10px;
@@ -176,12 +308,16 @@
 .section-course-selection__block-img {
   width: 120px;
   height: 120px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, .5);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 26px;
+
+  .wechat-icon {
+    width: 69px;
+    height: 60px;
+  }
 }
 
 .section-course-selection__block-title {
@@ -192,6 +328,9 @@
   color: #FFFFFF;
   display: block;
   margin-bottom: 7px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: 26px;
 }
 
 .section-course-selection__block-text {
@@ -243,6 +382,9 @@
   color: #FFFFFF;
   height: 50px;
   width: 100%;
+  max-width: 311px;
+  margin-left: auto;
+  margin-right: auto;
 
   &:hover {
     background: rgba(15, 15, 15, .5);

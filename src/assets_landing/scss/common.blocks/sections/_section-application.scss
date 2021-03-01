@@ -89,3 +89,54 @@
     text-decoration-color: rgba(255, 255, 255, .3);
   }
 }
+
+@media (max-width: 991.98px) {
+  .section-application__mail {
+    padding-left: 0;
+  }
+
+  .section-application {
+    padding-top: 54px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-application__title {
+    margin-bottom: 10px;
+  }
+
+  .section-application__subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+
+  .section-application__form-block button {
+    height: 46px;
+    width: 209px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-application__form-block .form-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-application__form-block .form-check {
+    justify-content: flex-start;
+    margin-bottom: 57px;
+  }
+
+  .section-application__form-block .form-check-label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .section-application__mail a, .section-application__mail span {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}

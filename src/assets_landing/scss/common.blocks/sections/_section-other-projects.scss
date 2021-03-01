@@ -25,3 +25,14 @@
     text-decoration-color: #761A56;
   }
 }
+
+.section-other-projects__slider {
+
+}
+
+.section-other-projects__item {
+  &:focus{
+    border: none;
+    outline: none;
+  }
+}

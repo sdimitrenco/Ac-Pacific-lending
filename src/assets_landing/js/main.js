@@ -45,6 +45,13 @@ $('.sliderSecond').slick({
     slidesToShow: 1,
 });
 
+$('.section-other-projects__slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+});
+
 $('.section-our-clients__slider-1').slick({
     dots: false,
     infinite: true,

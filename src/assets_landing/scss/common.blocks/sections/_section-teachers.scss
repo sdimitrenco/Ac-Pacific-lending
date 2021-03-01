@@ -1,6 +1,28 @@
 .section-teachers {
   padding-top: 54px;
   padding-bottom: 10px;
+  background: linear-gradient(180deg, #663755 3.04%, #1E203C 100%);
+  position: relative;
+  overflow: hidden;
+
+  & > div {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 120%;
+    background: url(../img/section-teachers-bg.png) no-repeat center;
+    opacity: 0.1;
+    background-size: cover;
+  }
 }
 
 .section-teachers__title {

@@ -36,7 +36,7 @@
   display: flex;
   margin-bottom: 56px;
 
-  &:last-child {
+  &:last-of-type {
     margin-bottom: 0;
   }
 }
@@ -122,7 +122,7 @@
   align-items: center;
   margin-bottom: 50px;
 
-  &:last-child {
+  &:last-of-type {
     margin-bottom: 0;
 
     .section-solutions-corporate-clients__step-title:before {
@@ -138,6 +138,7 @@
 .section-solutions-corporate-clients__step-icon {
   width: 79px;
   height: 79px;
+  min-width: 79px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -188,5 +189,137 @@
 @media (min-width: 2000px) {
   .section-solutions-corporate-clients:before {
     width: 46%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-solutions-corporate-clients__title {
+    br {
+      display: none;
+    }
+  }
+
+  .section-solutions-corporate-clients__wrapper {
+    padding-right: 10px;
+  }
+
+  .section-solutions-corporate-clients__block-icon {
+    width: 85px;
+    height: 85px;
+    min-width: 85px;
+  }
+
+  .section-solutions-corporate-clients .container {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-solutions-corporate-clients .container {
+    padding-left: 15px;
+  }
+
+  .section-solutions-corporate-clients:before {
+    width: 100%;
+    height: 510px;
+    bottom: 0;
+    top: auto;
+  }
+
+  .section-solutions-corporate-clients__title {
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .section-solutions-corporate-clients__block-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    margin-right: 11px;
+
+    i {
+      max-width: 55%;
+    }
+  }
+
+  .section-solutions-corporate-clients__block-title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+
+  .section-solutions-corporate-clients__block-item p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .section-solutions-corporate-clients__block-item {
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  .section-solutions-corporate-clients__block-item:before {
+    left: 0;
+    top: 5px;
+  }
+
+  .section-solutions-corporate-clients__subTitle {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .section-solutions-corporate-clients__step-icon {
+    width: 59px;
+    height: 59px;
+    min-width: 59px;
+    margin-right: 11px;
+
+    i {
+      max-width: 60%;
+    }
+  }
+
+  .section-solutions-corporate-clients__step-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .section-solutions-corporate-clients__btn {
+    height: 46px;
+    width: 209px;
+    margin-top: 50px;
+  }
+
+  .section-solutions-corporate-clients__wrapper2 {
+    margin-top: 50px;
+  }
+
+  .section-solutions-corporate-clients__wrapper {
+    padding-right: 0;
+    position: relative;
+    padding-bottom: 50px;
+
+    &:before {
+      content: '';
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 30px 187.5px 0 187.5px;
+      border-color: #ffffff transparent transparent transparent;
+      position: absolute;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .section-solutions-corporate-clients__wrapper {
+    padding-bottom: 0;
   }
 }

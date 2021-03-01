@@ -63,14 +63,25 @@ a.footer__text:hover {
   margin-bottom: 0;
 }
 
+.footer__linkSmall {
+  font-size: 14px;
+  line-height: 23px;
+  display: block;
+}
+
 @media (max-width: 991.98px) {
   .footer__container-wrapper {
     flex-direction: column;
+    padding-bottom: 31px;
+    padding-top: 24px;
   }
 
   .footer__container-text {
     margin-bottom: 20px;
-    text-align: center;
+  }
+
+  .footer__box {
+    margin-left: 0;
   }
 
 }
@@ -78,5 +89,15 @@ a.footer__text:hover {
 @media (max-width: 767.98px) {
   .footer__wrapper {
     margin-bottom: 40px;
+  }
+
+  .footer {
+    padding-top: 21px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer__box {
+    width: 100%;
   }
 }
