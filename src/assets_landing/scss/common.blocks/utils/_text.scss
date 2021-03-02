@@ -55,25 +55,3 @@ h3, .h3 {
     }
   }
 }
-
-@media (max-width: 575.98px) {
-  .section-first__btnContainer {
-    flex-direction: column;
-  }
-
-  .header__button {
-    margin-bottom: 24px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .section-first__footer-list {
-    flex-wrap: wrap;
-  }
-
-  .section-first__footer-logo {
-    margin-bottom: 24px;
-  }
-}

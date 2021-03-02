@@ -32,7 +32,18 @@
   color: #ffffff;
 }
 
-@media (max-width: 991.98px) {
+.header__button {
+  width: 251px;
+  height: 50px;
+  margin-left: 8px;
+  margin-right: 8px;
+
+  &.btn-light {
+    color: #CC1237;
+  }
+}
+
+@media (max-width: 1199.98px) {
   .header__navbar {
     .navbar-collapse {
       background: #ffffff;
@@ -142,6 +153,16 @@
 
   .header__navbar .navbar-collapse {
     right: 0;
+  }
+
+  .header .navbar-brand a {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .header__button {
+    height: 44px;
+    font-size: 12px;
   }
 }
 

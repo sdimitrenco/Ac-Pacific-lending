@@ -1,0 +1,133 @@
+.reviews-block {
+  border: 1px solid #d0d0d0;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background: url(../img/blur.png) -440px -210px no-repeat;
+  width: 1000px;
+}
+
+.comment-block {
+  font-size: 18px;
+  padding: 30px 40px 30px 30px;
+}
+
+.overflow-block {
+  border-left: 1px solid #d0d0d0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.img-a-b {
+  width: 144px;
+  height: 144px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.name-a-b {
+  font-size: 18px;
+  color: #555;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 700;
+
+  a {
+    background: url(../img/facebook-little-icon.svg);
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-left: 20px;
+  }
+}
+
+.text-avatar-block {
+  font-size: 14px;
+  color: #555;
+}
+
+.center.slider {
+
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+    margin: 0 20px;
+  }
+
+  .slick-current {
+    opacity: 1;
+  }
+
+  .slick-prev:before, .slick-next:before {
+    color: black;
+    content: '';
+    width: 10px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: url(../img/arrow-right-white.svg) center/100% auto no-repeat;
+  }
+
+  .slick-prev:before {
+    transform: translate(-50%,-50%) rotate(180deg);
+  }
+
+  .slick-prev, .slick-next {
+    background: rgba(0, 0, 0, 1);
+    border-radius: 50%;
+  }
+
+  .slick-prev {
+    left: 25px!important;
+    z-index: 15!important;
+    width: 50px!important;
+    height: 50px!important;
+    opacity: .5!important;
+  }
+
+  .slick-next {
+    right: 25px!important;
+    z-index: 15!important;
+    width: 50px!important;
+    height: 50px!important;
+    opacity: .5!important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .reviews-block {
+    width: 600px;
+  }
+
+  .comment-block {
+    font-size: 16px;
+    padding: 0 20px 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .comment-block {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
+
+
+@media screen and (max-width: 663px) {
+  .reviews-block {
+    padding-bottom: 0;
+    padding-top: 14px;
+    width: 300px;
+  }
+
+  .comment-block {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+}
+
+

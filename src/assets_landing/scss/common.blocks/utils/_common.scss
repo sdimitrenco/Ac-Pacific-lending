@@ -128,12 +128,12 @@ main {
 
   &.active {
     .section-course-selection__block-img {
-      border-color: #3BBF78;
+      border-color: #3BBF78 !important;
     }
 
     .section-course-selection__block-btn {
       border-color: #3BBF78;
-      color: #3BBF78;
+      color: #3BBF78 !important;
     }
   }
 
@@ -153,17 +153,21 @@ main {
 
   &.active {
     .section-course-selection__block-img {
-      border-color: #FE7500;
+      border-color: #FE7500 !important;;
     }
 
     .section-course-selection__block-btn {
       border-color: #FE7500;
-      color: #FE7500;
+      color: #fe7500 !important;
     }
   }
 }
 
 .shadowColor-3 {
+
+  .section-course-selection__block-btnVideo {
+    background: rgba(15,15,15,.5) !important;
+  }
 
   &:before {
     background: #4D1260;
@@ -174,13 +178,18 @@ main {
   }
 
   &.active {
+
+    .section-course-selection__block-btnVideo {
+      background: rgba(15,15,15,.1) !important;
+    }
+
     .section-course-selection__block-img {
-      border-color: #4D1260;
+      border-color: #4D1260 !important;
     }
 
     .section-course-selection__block-btn {
       border-color: #4D1260;
-      color: #4D1260;
+      color: #4D1260 !important;
     }
   }
 }
@@ -196,12 +205,12 @@ main {
 
   &.active {
     .section-course-selection__block-img {
-      border-color: #B02B3C;
+      border-color: #B02B3C !important;
     }
 
     .section-course-selection__block-btn {
       border-color: #B02B3C;
-      color: #B02B3C;
+      color: #B02B3C !important;
     }
   }
 }
@@ -217,12 +226,12 @@ main {
 
   &.active {
     .section-course-selection__block-img {
-      border-color: #209BD0;
+      border-color: #209BD0 !important;
     }
 
     .section-course-selection__block-btn {
       border-color: #209BD0;
-      color: #209BD0;
+      color: #209BD0 !important;
     }
   }
 }
@@ -238,12 +247,12 @@ main {
 
   &.active {
     .section-course-selection__block-img {
-      border-color: #2C2E7E;
+      border-color: #2C2E7E !important;
     }
 
     .section-course-selection__block-btn {
       border-color: #2C2E7E;
-      color: #2C2E7E;
+      color: #2C2E7E !important;
     }
   }
 }
@@ -259,12 +268,12 @@ main {
 
   &.active {
     .section-course-selection__block-img {
-      border-color: #4D1260;
+      border-color: #4D1260 !important;
     }
 
     .section-course-selection__block-btn {
       border-color: #4D1260;
-      color: #4D1260;
+      color: #4D1260 !important;
     }
   }
 }
@@ -280,12 +289,12 @@ main {
 
   &.active {
     .section-course-selection__block-img {
-      border-color: #2C2E7E;
+      border-color: #2C2E7E !important;
     }
 
     .section-course-selection__block-btn {
       border-color: #2C2E7E;
-      color: #2C2E7E;
+      color: #2C2E7E !important;
     }
   }
 }
@@ -301,12 +310,12 @@ main {
 
   &.active {
     .section-course-selection__block-img {
-      border-color: #C11C7F;
+      border-color: #C11C7F !important;
     }
 
     .section-course-selection__block-btn {
       border-color: #C11C7F;
-      color: #C11C7F;
+      color: #C11C7F !important;
     }
   }
 }
@@ -322,12 +331,12 @@ main {
 
   &.active {
     .section-course-selection__block-img {
-      border-color: #C11C7F;
+      border-color: #C11C7F !important;
     }
 
     .section-course-selection__block-btn {
       border-color: #C11C7F;
-      color: #C11C7F;
+      color: #C11C7F !important;
     }
   }
 }
@@ -343,12 +352,12 @@ main {
 
   &.active {
     .section-course-selection__block-img {
-      border-color: #211DBE;
+      border-color: #211DBE !important;
     }
 
     .section-course-selection__block-btn {
       border-color: #211DBE;
-      color: #211DBE;
+      color: #211DBE !important;
     }
   }
 }
@@ -364,12 +373,12 @@ main {
 
   &.active {
     .section-course-selection__block-img {
-      border-color: #1DBEB5;
+      border-color: #1DBEB5 !important;
     }
 
     .section-course-selection__block-btn {
       border-color: #1DBEB5;
-      color: #1DBEB5;
+      color: #1DBEB5 !important;
     }
   }
 }

@@ -392,6 +392,65 @@
   }
 }
 
+.section-complex-plus__btn .section-course-selection__block-btn-close {
+  display: none;
+}
+
+.section-complex-plus__wrapper.active {
+  .section-complex-plus__btn .section-course-selection__block-btn-close {
+    display: flex;
+  }
+
+  .section-complex-plus__btn .section-course-selection__block-btn-open {
+    display: none;
+  }
+}
+
+.section-course-selection__block-mobContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-course-selection__block-iconBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.section-course-selection__block-iconBlock-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-course-selection__block-iconBlock-icon-1 {
+  left: 0;
+}
+
+.section-course-selection__block-iconBlock-icon-2 {
+  right: 20px;
+}
+
+@media (max-width: 1199.98px) {
+  .section-course-selection__block-title {
+    width: 100% !important;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .section-course-selection__block-iconBlock-icon {
+    display: none !important;
+  }
+  
+  .section-course-selection__block-iconBlock {
+    span {
+      display: none !important;
+    }
+  }
+}
+
 @media (max-width: 991.98px) {
   .section-course-selection__mobil {
     display: block;
@@ -399,6 +458,74 @@
   
   .section-course-selection__dt {
     display: none;
+  }
+
+  .section-course-selection__block {
+    min-height: auto;
+  }
+
+  .section-course-selection__block-wrapper {
+    flex-direction: row;
+    padding: 22px 10px 25px 22px;
+  }
+
+  .section-course-selection__block-title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .section-course-selection__block-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FCFCFC;
+    margin-bottom: 13px;
+  }
+
+  .section-course-selection__block-img {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    margin-right: 18px;
+
+    i {
+      max-width: 60%;
+    }
+  }
+
+  .section-course-selection__block-btn {
+    margin-top: 0 !important;
+    margin-left: 10px;
+    width: 140px;
+    min-width: 140px;
+    height: 46px;
+
+    span {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  .section-course-selection__block-btnVideo {
+    width: 54px;
+    height: 46px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .section-course-selection__block.active .youtube-icon {
+    background: url("../img/youtube-active.svg") no-repeat center;
+    background-size: 100% auto;
+  }
+
+  .section-course-selection__block-wrapper {
+    align-items: flex-start;
   }
 }
 

@@ -30,3 +30,30 @@
   text-align: center;
   color: #555555;
 }
+
+@media (max-width: 767.98px) {
+  .media-container-v1__title {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+
+  .media-container-v1__text {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0;
+  }
+
+  .media-container-v1 {
+    margin-bottom: 26px;
+  }
+
+  .media-container-v1__icon {
+    margin-bottom: 19px;
+    min-height: 40px;
+    height: 40px;
+    max-width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -113,3 +113,79 @@
 .img3 {
   z-index: 0;
 }
+
+@media (max-width: 991.98px) {
+  .section-certificate__slider {
+    height: 554px;
+    margin-top: 40px;
+  }
+
+  .section-certificate__btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+
+  .section-certificate__img {
+    top: 0;
+    transform: none;
+  }
+
+  .section-certificate__img-1 {
+    top: 34px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section-certificate {
+    padding-top: 34px;
+    padding-bottom: 46px;
+  }
+
+  .section-certificate__img {
+    img {
+      width: 267px;
+      height: 379px;
+    }
+  }
+
+  .section-certificate__title {
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 22px;
+  }
+
+  .section-certificate__block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-certificate__block-circle {
+    margin-right: 0;
+    margin-bottom: 22px;
+  }
+
+  .section-certificate__block-title {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .section-certificate__slider {
+    height: 409px;
+  }
+
+  .section-certificate__img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .section-certificate__img-2, .section-certificate__img-3 {
+    left: 40%;
+  }
+
+  .section-certificate__img-1 {
+    left: 60%;
+  }
+}

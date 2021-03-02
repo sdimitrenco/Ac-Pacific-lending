@@ -16,3 +16,13 @@
     border-right: 1px solid #593351;
   }
 }
+
+@media (max-width: 767.98px) {
+  .list-benefits-section .row>div:not(:last-child):before {
+    display: none;
+  }
+
+  .list-benefits-section {
+    padding-bottom: 0;
+  }
+}

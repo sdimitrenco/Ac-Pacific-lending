@@ -62,3 +62,42 @@
     color: #333333;
   }
 }
+
+@media (max-width: 767.98px) {
+  .suitable-course-block {
+    padding: 21px 20px 43px 13px;
+  }
+
+  .section-course-cost__mainText p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .suitable-course-block__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 26px;
+  }
+
+  .suitable-course-block__item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .suitable-course-block__item:before {
+    top: 4px;
+  }
+
+  .suitable-course-block__icon {
+    margin-right: 18px;
+
+    i {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .suitable-course-block__list {
+    margin-bottom: 0;
+  }
+}

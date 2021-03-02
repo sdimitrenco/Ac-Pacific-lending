@@ -17,8 +17,8 @@
 .sendy-logo {
   background: url("../img/sendy-logo.png") no-repeat center;
   background-size: 100% auto;
-  width: 110px;
-  height: 55px;
+  width: 87px;
+  height: 44px;
   display: block;
 }
 
@@ -185,8 +185,8 @@
 .logo {
   background: url("../img/main-logo.svg") no-repeat center;
   background-size: 100% auto;
-  width: 200px;
-  height: 50px;
+  width: 300px;
+  height: 75px;
   display: block;
 }
 
@@ -550,6 +550,39 @@
   display: block;
 }
 
+.sina-weibo-logo_topic-block {
+  width: 49px;
+  height: 40px;
+}
+
+.baidu-ads-logo_topic-block {
+  width: 34px;
+  height: 57px;
+}
+
+.chinese-face-icon_topic-block {
+  width: 52px;
+  height: 52px;
+}
+
+.appointment-icon {
+  background: url("../img/appointment-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.baidu-search-logo__min {
+  width: 29px;
+  height: 50px;
+}
+
+.baidu-seo-icon__mob {
+  width: 31px;
+  height: 46px;
+}
+
 .section-course-selection__block.active {
   .wechat-icon {
     background: url(../img/wechat-icon__active.svg) center/100% auto no-repeat;
@@ -614,4 +647,91 @@
   .qiy-logo {
     background: url(../img/qiy-logo__active.png) center/100% auto no-repeat;
   }
+}
+
+.section-complex-plus__wrapper.active {
+  .wechat-icon {
+    background: url(../img/wechat-icon__active.svg) center/100% auto no-repeat;
+  }
+
+  .marketplaces-china-icon {
+    background: url(../img/marketplace-logo__active.svg) center/100% auto no-repeat
+  }
+
+  .douyin-kuaishou-icon {
+    background: url(../img/douyin-logo__active.svg) center/100% auto no-repeat;
+  }
+
+  .influencer-icon {
+    background: url(../img/influencer-logo2__active.svg) center/100% auto no-repeat;
+  }
+
+  .Bilibili_Logo_Blue {
+    background: url(../img/Bilibili_Logo_Blue-v2__active.svg) center/100% auto no-repeat;
+  }
+
+  .Subtract-icon {
+    background: url(../img/Subtract-icon__active.svg) center/100% auto no-repeat;
+  }
+
+  .sina-weibo-logo {
+    background: url(../img/sina-weibo-logo__active.svg) center/100% auto no-repeat;
+  }
+
+  .baidu-ads-logo {
+    background: url(../img/baidu-ads-logo__active.svg) center/100% auto no-repeat;
+  }
+
+  .chinese-face-icon {
+    background: url(../img/chinese-face-icon__active.svg) center/100% auto no-repeat;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-complex-plus__wrapper {
+    .wechat-icon {
+      background: url(../img/wechat-icon__active.svg) center/100% auto no-repeat;
+    }
+
+    .marketplaces-china-icon {
+      background: url(../img/marketplace-logo__active.svg) center/100% auto no-repeat
+    }
+
+    .douyin-kuaishou-icon {
+      background: url(../img/douyin-logo__active.svg) center/100% auto no-repeat;
+    }
+
+    .influencer-icon {
+      background: url(../img/influencer-logo2__active.svg) center/100% auto no-repeat;
+    }
+
+    .Bilibili_Logo_Blue {
+      background: url(../img/Bilibili_Logo_Blue-v2__active.svg) center/100% auto no-repeat;
+    }
+
+    .Subtract-icon {
+      background: url(../img/Subtract-icon__active.svg) center/100% auto no-repeat;
+    }
+
+    .sina-weibo-logo {
+      background: url(../img/sina-weibo-logo__active.svg) center/100% auto no-repeat;
+    }
+
+    .baidu-ads-logo {
+      background: url(../img/baidu-ads-logo__active.svg) center/100% auto no-repeat;
+    }
+
+    .chinese-face-icon {
+      background: url(../img/chinese-face-icon__active.svg) center/100% auto no-repeat;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .baidu-ads-logo_topic-block {
+    height: 31px;
+    width: 18px;
+  }
+
 }

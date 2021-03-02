@@ -22,6 +22,9 @@
 //BUTTON
 @import "common.blocks/blocks/buttons";
 
+//main styles
+@import "common.blocks/utils/common";
+
 //SECTIONS
 @import "common.blocks/sections/header";
 @import "common.blocks/sections/footer";
@@ -43,6 +46,7 @@
 @import "common.blocks/sections/section-module-program";
 @import "common.blocks/sections/section-teaser";
 @import "common.blocks/sections/section-complex-plus-content";
+@import "common.blocks/sections/reviews-block";
 
 //BLOCKS
 @import "common.blocks/blocks/icons/icons";
@@ -54,8 +58,5 @@
 @import "common.blocks/blocks/topic-block";
 @import "common.blocks/blocks/module-program-block";
 @import "common.blocks/blocks/suitable-course-block";
-
-//main styles
-@import "common.blocks/utils/common";
 
 

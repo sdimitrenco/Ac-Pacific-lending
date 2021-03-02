@@ -20,4 +20,14 @@
   .tab-content-wrapper {
     display: none;
   }
+
+  .tab-content-wrapper_complex-plus {
+    display: block;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .tab-container.active {
+    padding-bottom: 50px;
+  }
 }

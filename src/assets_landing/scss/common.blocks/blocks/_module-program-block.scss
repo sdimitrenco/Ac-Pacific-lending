@@ -105,7 +105,8 @@
 .module-program-block__header-block {
   display: inline-flex;
   align-items: center;
-  width: 33%;
+  justify-content: center;
+  width: 50%;
   position: relative;
   
   &:last-of-type:before {
@@ -148,4 +149,61 @@
   line-height: 20px;
   color: #333333;
   margin-right: 4px;
+}
+
+
+@media (max-width: 991.98px) {
+  .module-program-block__header {
+    flex-direction: column;
+    padding-left: 35px;
+  }
+
+  .module-program-block__header-block {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 21px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .module-program-block__header-block:before {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .module-program-block .card {
+    margin-left: 18px;
+    margin-right: 15px;
+  }
+
+  .module-program-block .card-header {
+    padding-left: 0;
+  }
+
+  .module-program-block .btn {
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .module-program-block .card-body {
+    padding-left: 0;
+  }
+
+  .module-program-block .card-body ul {
+    padding-left: 0;
+  }
+
+  .module-program-block .btn:before {
+    width: 23px;
+    height: 23px;
+  }
+
+  .module-program-block .card-body li {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
