@@ -21,7 +21,7 @@
                                 <span class="navbar-brand">
                                     <a href="mailto:info@as-pacific.com">info@as-pacific.com</a>
                                     <span>|</span>
-                                    <a class="d-flex align-items-center" href="tel:+74956416118"><i class="smartphone-icon mr-2 d-none d-sm-block"></i>Обратный звонок</a> <!--модалка-->
+                                    <div class="d-flex align-items-center cursor-pointer" data-toggle="modal" data-target="#exampleModal"><i class="smartphone-icon mr-2 d-none d-sm-block"></i>Обратный звонок</div> <!--модалка-->
                                 </span>
                                 <button class="navbar-toggler hamburger section-first__hamburger collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="l1"></span>
@@ -30,11 +30,11 @@
                                 </button>
                                 <div class="collapse navbar-collapse ml-auto justify-content-between" id="navbarNavAltMarkup">
                                     <div class="navbar-nav">
-                                        <a class="nav-item nav-link anchor-link" href="#">О НАС</a>
+                                        <a class="nav-item nav-link anchor-link" href="https://as-pacific.com/o-nas/">О НАС</a>
                                         <a class="nav-item nav-link anchor-link" href="#teachers">наши Преподователи</a>
                                         <a class="nav-item nav-link anchor-link" href="#certificate">Сертификаты</a>
-                                        <a class="nav-item nav-link anchor-link" href="#">стать преподавателем</a>
-                                        <a class="nav-item nav-link anchor-link" href="#teachers">КОНТАКТЫ</a>
+                                        <a class="nav-item nav-link anchor-link" href="#" data-toggle="modal" data-target="#become-speaker">стать преподавателем</a>
+                                        <a class="nav-item nav-link anchor-link" href="#contacts">КОНТАКТЫ</a>
                                     </div>
                                 </div>
                             </nav>
@@ -52,7 +52,7 @@
                                     <span>Назад на сайт</span>
                                 </a>
                             </div>
-                            <span class="logo mb-5 d-none d-md-block"></span>
+                            <a href="https://as-pacific.com/" class="logo mb-5 d-none d-md-block"></a>
                             <div class="section-first__titleContainer">
                                 <h1 class="h1 section-first__title">СТАНЬТЕ ЭКСПЕРТОМ ПО МАРКЕТИНГУ В КИТАЕ</h1>
                             </div>
@@ -61,8 +61,8 @@
                     </div>
                     <div class="col-12">
                         <div class="section-first__btnContainer">
-                            <a href="#" class="btn btn-primary main-btn header__button" data-toggle="modal" data-target="#exampleModal">смотреть курсы</a>
-                            <a href="#" class="btn btn-light main-btn header__button anchor-link">смотреть видео</a>
+                            <a href="#all-directions" class="btn btn-primary main-btn anchor-link header__button">смотреть курсы</a>
+                            <a href="#" class="btn btn-light main-btn header__button anchor-link" data-toggle="modal" data-target="#modal1">смотреть видео</a>
                         </div>
 
                         <div class="section-first__footer">
@@ -128,7 +128,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-course-selection pb-4">
+        <section id="all-directions" class="section section-course-selection pb-4">
             <div class="section-course-selection__dt">
                 <div class="container">
                     <div class="row">
@@ -143,7 +143,7 @@
                                     </div>
                                     <span class="section-course-selection__block-title">WECHAT</span>
                                     <span class="section-course-selection__block-subTitle">О крупнейшей экосистеме Китая</span>
-                                    <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
+                                    <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-1"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
                                     <ul class="section-course-selection__block-ul ul-v1">
                                         <li class="section-course-selection__block-li">
                                             <p>Введение</p>
@@ -183,7 +183,7 @@
                                     </div>
                                     <span class="section-course-selection__block-title">МАРКЕТПЛЕЙСЫ КИТАЯ</span>
                                     <span class="section-course-selection__block-subTitle">Открытие магазина, размещение и продажи</span>
-                                    <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
+                                    <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-2"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
                                     <ul class="section-course-selection__block-ul ul-v2">
                                         <li class="section-course-selection__block-li">
                                             <p>TAOBAO</p>
@@ -216,7 +216,7 @@
                                     </div>
                                     <span class="section-course-selection__block-title">DOUYIN И KUAISHOU</span>
                                     <p class="section-course-selection__block-subTitle">Главные сервисы короткометражных видео</p>
-                                    <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
+                                    <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-3"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
                                     <ul class="section-course-selection__block-ul ul-v3">
                                         <li class="section-course-selection__block-li">
                                             <p>Введение</p>
@@ -261,7 +261,7 @@
                                         <span class="section-course-selection__block-title">WECHAT</span>
                                         <p class="section-course-selection__block-text">О крупнейшей экосистеме Китая</p>
                                         <div class="d-flex">
-                                            <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon"></i></button>
+                                            <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-1"><i class="youtube-icon"></i></button>
                                             <button class="btn btn-outline-light main-btn section-course-selection__block-btn">
                                                 <span class="section-course-selection__block-btn-open section-course-selection__block-btn-open-2" data-tab="1">Подробнее</span>
                                                 <span class="section-course-selection__block-btn-close">Закрыть</span>
@@ -490,7 +490,7 @@
                                         <span class="section-course-selection__block-title">МАРКЕТПЛЕЙСЫ КИТАЯ</span>
                                         <p class="section-course-selection__block-text">Открытие магазина, размещение и продажи</p>
                                         <div class="d-flex">
-                                            <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon"></i></button>
+                                            <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-2"><i class="youtube-icon"></i></button>
                                             <button class="btn btn-outline-light main-btn section-course-selection__block-btn">
                                                 <span class="section-course-selection__block-btn-open section-course-selection__block-btn-open-2" data-tab="2">Подробнее</span>
                                                 <span class="section-course-selection__block-btn-close">Закрыть</span>
@@ -1335,7 +1335,7 @@
                                     </div>
                                     <span class="section-course-selection__block-title">WEIBO</span>
                                     <span class="section-course-selection__block-subTitle">Крупнейший сервис микроблогов Китая</span>
-                                    <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
+                                    <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-4"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
                                     <ul class="section-course-selection__block-ul ul-v4">
                                         <li class="section-course-selection__block-li">
                                             <p>Введение</p>
@@ -1365,7 +1365,7 @@
                                     </div>
                                     <span class="section-course-selection__block-title">БЛОГЕРЫ В КИТАЕ МЕДИА И СМИ</span>
                                     <span class="section-course-selection__block-subTitle">Реклама через блогеров и лидеров мнений, а также китайские сайты для платного и бесплатного размещения рекламы</span>
-                                    <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
+                                    <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-5"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
                                     <ul class="section-course-selection__block-ul ul-v5">
                                         <li class="section-course-selection__block-li">
                                             <p>Платформы для сотрудничества с блогерами</p>
@@ -1399,7 +1399,7 @@
                                     </div>
                                     <span class="section-course-selection__block-title">ВИДЕОХОСТИНГИ В КИТАЕ</span>
                                     <p class="section-course-selection__block-subTitle">Youku, BiliBili, IQYI, Tencent Video</p>
-                                    <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
+                                    <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-6"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
                                     <ul class="section-course-selection__block-ul ul-v6">
                                         <li class="section-course-selection__block-li">
                                             <p>BiliBili</p>
@@ -2039,7 +2039,7 @@
                 </section>
             </div>
         </div>
-        <section class="section section-complex-plus pt-0 pb-0">
+        <section id="complex-plus" class="section section-complex-plus pt-1 pb-0">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -2245,7 +2245,7 @@
                                     </div>
                                     <span class="section-course-selection__block-title">КОНТЕКСТНАЯ РЕКЛАМА В BAIDU ADS</span>
                                     <span class="section-course-selection__block-subTitle">Крупнейшая рекламная сеть в Китае</span>
-                                    <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
+                                    <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-7"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
                                     <ul class="section-course-selection__block-ul ul-v7">
                                         <li class="section-course-selection__block-li">
                                             <p>Регистрация и верификация рекламного кабинета</p>
@@ -2275,7 +2275,7 @@
                                     </div>
                                     <span class="section-course-selection__block-title">ПРИВЛЕЧЕНИЕ ТУРИСТОВ ИЗ КИТАЯ</span>
                                     <span class="section-course-selection__block-subTitle">Как зарабатывать на китайских туристах</span>
-                                    <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
+                                    <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-8"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
                                     <ul class="section-course-selection__block-ul">
                                         <li class="section-course-selection__block-li">
                                             <p>Введение</p>
@@ -2313,8 +2313,8 @@
                                         <i class="baidu-search-logo"></i>
                                     </div>
                                     <span class="section-course-selection__block-title" style="width: 355px">ПОИСКОВО-ИНФОРМАЦИОННЫЕ СЕРВИСЫ</span>
-                                    <p class="section-course-selection__block-subTitle">Продвижение в главной китайской поисковой системе Baidu</p>
-                                    <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
+                                    <p class="section-course-selection__block-subTitle">Регистрация, размещение и продвижение</p>
+                                    <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-9"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
                                     <ul class="section-course-selection__block-ul ul-v8">
                                         <li class="section-course-selection__block-li">
                                             <p>Регистрация и верификаиця</p>
@@ -2352,7 +2352,7 @@
                                         <span class="section-course-selection__block-title">DOUYIN И KUAISHOU</span>
                                         <p class="section-course-selection__block-text">Главные сервисы короткометражных видео</p>
                                         <div class="d-flex">
-                                            <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon"></i></button>
+                                            <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-3"><i class="youtube-icon"></i></button>
                                             <button class="btn btn-outline-light main-btn section-course-selection__block-btn">
                                                 <span class="section-course-selection__block-btn-open section-course-selection__block-btn-open-2" data-tab="3">Подробнее</span>
                                                 <span class="section-course-selection__block-btn-close">Закрыть</span>
@@ -2580,7 +2580,7 @@
                                         <span class="section-course-selection__block-title">БЛОГЕРЫ В КИТАЕ МЕДИА И СМИ</span>
                                         <p class="section-course-selection__block-text">Реклама через блогеров и лидеров мнений, а также китайские сайты для платного и бесплатного размещения рекламы</p>
                                         <div class="d-flex">
-                                            <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon"></i></button>
+                                            <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-5"><i class="youtube-icon"></i></button>
                                             <button class="btn btn-outline-light main-btn section-course-selection__block-btn">
                                                 <span class="section-course-selection__block-btn-open section-course-selection__block-btn-open-2" data-tab="4">Подробнее</span>
                                                 <span class="section-course-selection__block-btn-close">Закрыть</span>
@@ -2808,7 +2808,7 @@
                                         <span class="section-course-selection__block-title">WEIBO</span>
                                         <p class="section-course-selection__block-text">Крупнейший сервис микроблогов Китая</p>
                                         <div class="d-flex">
-                                            <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon"></i></button>
+                                            <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-4"><i class="youtube-icon"></i></button>
                                             <button class="btn btn-outline-light main-btn section-course-selection__block-btn">
                                                 <span class="section-course-selection__block-btn-open section-course-selection__block-btn-open-2" data-tab="5">Подробнее</span>
                                                 <span class="section-course-selection__block-btn-close">Закрыть</span>
@@ -3036,7 +3036,7 @@
                                         <span class="section-course-selection__block-title">ВИДЕОХОСТИНГИ В КИТАЕ</span>
                                         <p class="section-course-selection__block-text">Youku, BiliBili, IQYI, Tencent Video</p>
                                         <div class="d-flex">
-                                            <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon"></i></button>
+                                            <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-6"><i class="youtube-icon"></i></button>
                                             <button class="btn btn-outline-light main-btn section-course-selection__block-btn">
                                                 <span class="section-course-selection__block-btn-open section-course-selection__block-btn-open-2" data-tab="6">Подробнее</span>
                                                 <span class="section-course-selection__block-btn-close">Закрыть</span>
@@ -3264,7 +3264,7 @@
                                         <span class="section-course-selection__block-title">КОНТЕКСТНАЯ РЕКЛАМА В BAIDU ADS</span>
                                         <p class="section-course-selection__block-text">Крупнейшая рекламная сеть в Китае</p>
                                         <div class="d-flex">
-                                            <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon"></i></button>
+                                            <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-7"><i class="youtube-icon"></i></button>
                                             <button class="btn btn-outline-light main-btn section-course-selection__block-btn">
                                                 <span class="section-course-selection__block-btn-open section-course-selection__block-btn-open-2" data-tab="7">Подробнее</span>
                                                 <span class="section-course-selection__block-btn-close">Закрыть</span>
@@ -3492,7 +3492,7 @@
                                         <span class="section-course-selection__block-title">ПРИВЛЕЧЕНИЕ ТУРИСТОВ ИЗ КИТАЯ</span>
                                         <p class="section-course-selection__block-text">Как зарабатывать на китайских туристах</p>
                                         <div class="d-flex">
-                                            <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon"></i></button>
+                                            <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-8"><i class="youtube-icon"></i></button>
                                             <button class="btn btn-outline-light main-btn section-course-selection__block-btn">
                                                 <span class="section-course-selection__block-btn-open section-course-selection__block-btn-open-2" data-tab="8">Подробнее</span>
                                                 <span class="section-course-selection__block-btn-close">Закрыть</span>
@@ -3718,7 +3718,7 @@
                                     </div>
                                     <div class="section-course-selection__block-mobContent">
                                         <span class="section-course-selection__block-title">ПОИСКОВО-ИНФОРМАЦИОННЫЕ СЕРВИСЫ</span>
-                                        <p class="section-course-selection__block-text">Продвижение в главной китайской поисковой системе Baidu</p>
+                                        <p class="section-course-selection__block-text">Регистрация, размещение и продвижение</p>
                                         <div class="d-flex">
                                             <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon"></i></button>
                                             <button class="btn btn-outline-light main-btn section-course-selection__block-btn">
@@ -3948,7 +3948,7 @@
                                         <span class="section-course-selection__block-title">КАК СТАТЬ БЛОГЕРОМ В КИТАЕ</span>
                                         <p class="section-course-selection__block-text">Практический курс для иностранцев</p>
                                         <div class="d-flex">
-                                            <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon"></i></button>
+                                            <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-10"><i class="youtube-icon"></i></button>
                                             <button class="btn btn-outline-light main-btn section-course-selection__block-btn">
                                                 <span class="section-course-selection__block-btn-open section-course-selection__block-btn-open-2" data-tab="10">Подробнее</span>
                                                 <span class="section-course-selection__block-btn-close">Закрыть</span>
@@ -4176,7 +4176,7 @@
                                         <span class="section-course-selection__block-title">SEO-ОПТИМИЗАЦИЯ САЙТА В КИТАЕ</span>
                                         <p class="section-course-selection__block-text">Продвижение в главной китайской поисковой системе Baidu</p>
                                         <div class="d-flex">
-                                            <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon"></i></button>
+                                            <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-11"><i class="youtube-icon"></i></button>
                                             <button class="btn btn-outline-light main-btn section-course-selection__block-btn">
                                                 <span class="section-course-selection__block-btn-open section-course-selection__block-btn-open-2" data-tab="11">Подробнее</span>
                                                 <span class="section-course-selection__block-btn-close">Закрыть</span>
@@ -4404,7 +4404,7 @@
                                         <span class="section-course-selection__block-title">ПРОДВИЖЕНИЕ МОБИЛЬНЫХ ПРИЛОЖЕНИЙ В КИТАЕ</span>
                                         <p class="section-course-selection__block-text">Размещение в китайских iOS- и android-сторах</p>
                                         <div class="d-flex">
-                                            <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon"></i></button>
+                                            <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-12"><i class="youtube-icon"></i></button>
                                             <button class="btn btn-outline-light main-btn section-course-selection__block-btn">
                                                 <span class="section-course-selection__block-btn-open section-course-selection__block-btn-open-2" data-tab="12">Подробнее</span>
                                                 <span class="section-course-selection__block-btn-close">Закрыть</span>
@@ -5248,7 +5248,7 @@
                                     </div>
                                     <span class="section-course-selection__block-title">КАК СТАТЬ БЛОГЕРОМ В КИТАЕ</span>
                                     <span class="section-course-selection__block-subTitle">Практический курс для иностранцев</span>
-                                    <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
+                                    <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-10"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
                                     <ul class="section-course-selection__block-ul section-course-selection__block-ul2">
                                         <li class="section-course-selection__block-li">
                                             <p>Подходящие платформы для блогеров</p>
@@ -5284,7 +5284,7 @@
                                     </div>
                                     <span class="section-course-selection__block-title">SEO-ОПТИМИЗАЦИЯ САЙТА В КИТАЕ</span>
                                     <span class="section-course-selection__block-subTitle">Продвижение в главной китайской поисковой системе Baidu</span>
-                                    <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
+                                    <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-11"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
                                     <ul class="section-course-selection__block-ul">
                                         <li class="section-course-selection__block-li">
                                             <p>Индексация в Baidu</p>
@@ -5317,7 +5317,7 @@
                                     </div>
                                     <span class="section-course-selection__block-title">ПРОДВИЖЕНИЕ МОБИЛЬНЫХ ПРИЛОЖЕНИЙ В КИТАЕ</span>
                                     <p class="section-course-selection__block-subTitle">Размещение в китайских iOS- и android-сторах</p>
-                                    <button class="btn main-btn section-course-selection__block-btnVideo"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
+                                    <button class="btn main-btn section-course-selection__block-btnVideo" data-toggle="modal" data-target="#modal-theme-preview-12"><i class="youtube-icon mr-2"></i>Посмотреть превью</button>
                                     <ul class="section-course-selection__block-ul">
                                         <li class="section-course-selection__block-li">
                                             <p>IOS, Android или mini-app WeChat</p>
@@ -5987,7 +5987,7 @@
                                     <p class="section-certificate__text">Эффективное повышение квалификации до специалиста по маркетингу со знанием китайского языка поможет вам найти высокооплачиваемую работу или продвинуться по карьерной лестнице.</p>
                                 </div>
                             </div>
-                            <button class="btn btn-primary main-btn section-certificate__btn d-none d-lg-block">Получить сертификат</button>
+                            <a href="#complex-plus" class="btn btn-primary main-btn section-certificate__btn d-none d-lg-flex">Получить сертификат</a>
                         </div>
                     </div>
                     <div class="col-lg-5">
@@ -6002,7 +6002,7 @@
                                 <img class="" src="assets_landing/img/serificat-1.jpg" alt="">
                             </a>
                         </div>
-                        <button class="btn btn-primary main-btn section-certificate__btn d-block d-lg-none">Получить сертификат</button>
+                        <a href="#complex-plus" class="btn btn-primary main-btn section-certificate__btn d-flex d-lg-none">Получить сертификат</a>
                     </div>
                 </div>
             </div>
@@ -6331,7 +6331,6 @@
                 <div class="row">
                     <div class="col-12">
                         <h2 class="h2 section-teachers__title">Преподаватели и кураторы</h2>
-<!--                        <p class="section-teachers__subtitle">Преподаватели курса - практикующие специалисты с реальными кейсами. На нашем счету больше 50 закрытых проектов. Мы делимся только актуальными данными и действительно работающими методами без “воды”.</p>-->
                     </div>
                 </div>
             </div>
@@ -6341,50 +6340,31 @@
                         <img data-srcset="assets_landing/img/img-slider-1.png" class="lazyload" alt="">
                     </div>
                     <div class="sliderFirst__content">
-                        <span class="sliderFirst__title">Арина</span>
+                        <span class="sliderFirst__title">Арина Несвит</span>
                         <span class="sliderFirst__subTitle">Менеджер проектов</span>
-                        <p class="sliderFirst__text">Специалист по контенту и продвижению в Douyin и Weibo</p>
+                        <p class="sliderFirst__text">МГУ им. Ломоносова, факультет Глобальных Процессов. Стажировалась в Beijing Language and Culture University, 北京语言大学 (Пекин) и в Southwestern University of Finance and Economics, 西南财经大学 (Чэнду). Специалист по продвижению и закупке рекламного трафика в Douyin, Weibo, Wechat. Реализованные проекты: Artlife, Смоленский Пассаж, Big Creative, Джонджоли. </p>
                     </div>
                 </div>
                 <div class="sliderFirst__item">
                     <div class="sliderFirst__img-wrapper">
-                        <img data-srcset="assets_landing/img/img-slider-2.png" class="lazyload" alt="">
+                        <img data-srcset="assets_landing/img/img-slider-4.png" class="lazyload" alt="">
                     </div>
                     <div class="sliderFirst__content">
-                        <span class="sliderFirst__title">Анастасия</span>
-                        <span class="sliderFirst__subTitle">Менеджер проектов</span>
-                        <p class="sliderFirst__text">Специалист по настройке таргетированной рекламы в WeChat, Douyin, Weibo, Xiaohongshu и контекстной рекламы Baidu</p>
-                    </div>
-                </div>
-                <div class="sliderFirst__item">
-                    <div class="sliderFirst__img-wrapper">
-                        <img data-srcset="assets_landing/img/img-slider-3.png" class="lazyload"  alt="">
-                    </div>
-                    <div class="sliderFirst__content">
-                        <span class="sliderFirst__title">Анастасия</span>
+                        <span class="sliderFirst__title">Чэнь Имин</span>
                         <span class="sliderFirst__subTitle">SMM менеджер</span>
-                        <p class="sliderFirst__text">Специалист по контенту в WeChat и Douyin</p>
+                        <p class="sliderFirst__text">НИУ-ВШЭ, Санкт-Петербургский Филиал. Факультет Международного Бизнеса и Менеджмента.
+                            Специалист по SMM-продвижению в китайских социальных сетях WeChat и Weibo.
+                            Куратор курса.</p>
                     </div>
                 </div>
-
                 <div class="sliderFirst__item">
                     <div class="sliderFirst__img-wrapper">
-                        <img data-srcset="assets_landing/img/img-slider-1.png" class="lazyload" alt="">
+                        <img data-srcset="assets_landing/img/img-slider-5.png" class="lazyload"  alt="">
                     </div>
                     <div class="sliderFirst__content">
-                        <span class="sliderFirst__title">Арина</span>
+                        <span class="sliderFirst__title">Анастасия Наседкина</span>
                         <span class="sliderFirst__subTitle">Менеджер проектов</span>
-                        <p class="sliderFirst__text">Ведёт такую-то кампанию в Weibo</p>
-                    </div>
-                </div>
-                <div class="sliderFirst__item">
-                    <div class="sliderFirst__img-wrapper">
-                        <img data-srcset="assets_landing/img/img-slider-2.png" class="lazyload" alt="">
-                    </div>
-                    <div class="sliderFirst__content">
-                        <span class="sliderFirst__title">Анастасия</span>
-                        <span class="sliderFirst__subTitle">Специалист по Wechat</span>
-                        <p class="sliderFirst__text">Ведёт такую-то кампанию в Wechat</p>
+                        <p class="sliderFirst__text">Выпускница МГУ им. Ломоносова, Институт стран Азии и Африки. Стажировалась в National Cheng Kung University, 国立成功大学 (Тайвань). Специалист по закупке рекламного трафика в Baidu, WeChat, Weibo, Xiaohongshu. Реализованные проекты: Аэрофлот, Bite, Flovera, Mira Estate, Migronis.</p>
                     </div>
                 </div>
                 <div class="sliderFirst__item">
@@ -6392,9 +6372,23 @@
                         <img data-srcset="assets_landing/img/img-slider-3.png" class="lazyload" alt="">
                     </div>
                     <div class="sliderFirst__content">
-                        <span class="sliderFirst__title">Анастасия</span>
-                        <span class="sliderFirst__subTitle">Менеджер проектов</span>
-                        <p class="sliderFirst__text">Ведёт такую-то кампанию в Weibo</p>
+                        <span class="sliderFirst__title">Анастасия Михайлова</span>
+                        <span class="sliderFirst__subTitle">SMM менеджер</span>
+                        <p class="sliderFirst__text">Выпускница МГИМО (У) МИД РФ, факультет Международных Отношений. Магистратура в Tsinghua University, 清华大学 (Пекин). Стажировалась в Fudan University 复旦大学 (Шанхай), Beijing Language and Culture University, 北京语言大学 (Пекин) и в Shanghai University of Finance and Economics, 上海财经大学 (Шанхай).
+                            Специалист по продвижению в WeChat. Реализованные проекты: продвижение “Вкусвилл” в WeChat.</p>
+                    </div>
+                </div>
+                <div class="sliderFirst__item">
+                    <div class="sliderFirst__img-wrapper">
+                        <img data-srcset="assets_landing/img/img-slider-6.png" class="lazyload" alt="">
+                    </div>
+                    <div class="sliderFirst__content">
+                        <span class="sliderFirst__title">Гань Сяоган</span>
+                        <span class="sliderFirst__subTitle">Контент-менеджер</span>
+                        <p class="sliderFirst__text">Выпускник РУДН, факультет Журналистики.
+                            Специалист по контент-менеджменту в китайских социальных сетях -WeChat, Weibo, Douyin и Kuaishou.
+                            Куратор курса.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -6403,7 +6397,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <span class="h3 section-solutions-corporate-clients__title">КОМАНДА ASIA PACIFIC ПРЕДЛАГАЕТ решения <br> для корпоративных клиентов:</span>
+                        <span class="h3 section-solutions-corporate-clients__title">КОМАНДА ASIA PACIFIC ПРЕДЛАГАЕТ решения для корпоративных клиентов:</span>
                     </div>
                     <div class="col-md-7">
                         <div class="section-solutions-corporate-clients__wrapper">
@@ -6455,7 +6449,7 @@
                                 </div>
                             </div>
 
-                            <button class="btn btn-primary main-btn section-solutions-corporate-clients__btn d-none d-md-block mt-5">Мне интересно</button>
+                            <a href="#complex-plus" class="btn btn-primary main-btn section-solutions-corporate-clients__btn d-none d-md-flex mt-5">Мне интересно</a>
                         </div>
                     </div>
                     <div class="col-md-5">
@@ -6480,7 +6474,7 @@
                                 <span class="section-solutions-corporate-clients__step-title">Получение опыта</span>
                             </div>
 
-                            <button class="btn btn-primary main-btn section-solutions-corporate-clients__btn d-block d-md-none">Мне интересно</button>
+                            <a href="#complex-plus" class="btn btn-primary main-btn section-solutions-corporate-clients__btn d-flex d-md-none">Мне интересно</a>
 
                         </div>
                     </div>
@@ -6495,27 +6489,33 @@
                     </div>
                     <div class="col-md-6">
                         <div class="section-questions__block">
+                            <span class="section-questions__block-question">Я предприниматель, хочу продавать свой продукт или услугу в Китае. Мне поможет ваш курс? </span>
+                            <p class="section-questions__block-text">Да, поможет. Пройдя обучение, вы сможете самостоятельно зарегистрироваться в китайских социальных сетях, открыть рекламный кабинет, запустить вашу первую рекламную кампанию и начать привлекать клиентов из Китая.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section-questions__block">
+                            <span class="section-questions__block-question">Хочу разместиться на китайских маркетплейсах. Мне поможет ваш курс? </span>
+                            <p class="section-questions__block-text">Да, поможет. Пройдя модуль <a class="anchor-link" href="#all-directions">“Маркетплейсы Китая”</a>  вы сможете выбрать подходящий маркетплейс, узнать требования к размещению вашей продукции и бюджеты на продвижение.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section-questions__block">
                             <span class="section-questions__block-question">Я не знаю китайского языка. Как мне поможет ваш курс?</span>
                             <p class="section-questions__block-text">Вы можете пройти обучение без знания китайского языка. Наши спикеры рассказывают (и показывают) материал на русском языке, а анимационные презентации помогают наглядно разобрать каждый урок. Однако, если у вас возникли вопросы, вы всегда можете обратиться к куратору курса.</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="section-questions__block">
+                            <span class="section-questions__block-question">Как мне получить сертификат о прохождении обучения по программе «МАРКЕТИНГ В КИТАЕ - ПОДГОТОВКА ПРОФЕССИОНАЛОВ»? </span>
+                            <p class="section-questions__block-text">Сертификат доступен только в пакете <a href="#complex-plus" class="anchor-link">Комплекс Plus</a>, который включает в себя 8 основных модулей для эффективного прохождения всей программы курса.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section-questions__block">
                             <span class="section-questions__block-question">Так много модулей, не знаю, с чего начать? </span>
                             <p class="section-questions__block-text">Для этого предусмотрен пакет Комплекс Plus, включающий в себя 8 тематических модулей и сертификат о прохождении обучения по программе «МАРКЕТИНГ В КИТАЕ - ПОДГОТОВКА ПРОФЕССИОНАЛОВ». Подробнее о
-                                <a href="#">Комплекс Plus</a> или о <a href="#">сертификате</a>.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="section-questions__block">
-                            <span class="section-questions__block-question">Какой срок действия курса?</span>
-                            <p class="section-questions__block-text">Отдельные тематические модули доступны 3 месяца, а модуль Комплекс Plus доступен 6 месяцев.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="section-questions__block">
-                            <span class="section-questions__block-question">Зачем нужен куратор?</span>
-                            <p class="section-questions__block-text">Куратор курса помогает на всех этапах обучения, например, если у вас возникли вопросы по курсу или отдельно взятому модулю.</p>
+                                <a href="#complex-plus">Комплекс Plus</a> или о <a href="#certificate">сертификате</a>.</p>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -6526,21 +6526,14 @@
                     </div>
                     <div class="col-md-6">
                         <div class="section-questions__block">
+                            <span class="section-questions__block-question">На какой срок я получаю доступ к курсу? </span>
+                            <p class="section-questions__block-text">Отдельные тематические модули доступны 3 месяца, а модуль <a href="#complex-plus">Комплекс Plus</a> доступен 6 месяцев.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section-questions__block">
                             <span class="section-questions__block-question">Я в другом городе, как мне получить сертификат?</span>
                             <p class="section-questions__block-text">По вашему запросу сертификат будет доставлен почтой по указанному вами адресу или вы можете получить электронную версию сертификата.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="section-questions__block">
-                            <span class="section-questions__block-question">Я предприниматель, хочу продавать свой продукт или услугу в Китае. Мне поможет ваш курс? </span>
-                            <p class="section-questions__block-text">Да, поможет. Пройдя обучение, вы сможете самостоятельно зарегистрироваться в китайских социальных сетях, открыть рекламный кабинет, запустить вашу первую рекламную кампанию и начать привлекать клиентов из Китая.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="section-questions__block">
-                            <span class="section-questions__block-question">Как мне получить сертификат о прохождении обучения по программе «МАРКЕТИНГ В КИТАЕ - ПОДГОТОВКА ПРОФЕССИОНАЛОВ»? </span>
-                            <p class="section-questions__block-text">Сертификат доступен только в пакете <a
-                                    href="#">Комплекс Plus</a>, который включает в себя 8 основных модулей для эффективного прохождения всей программы курса.</p>
                         </div>
                     </div>
                 </div>
@@ -6573,13 +6566,13 @@
                     <div class="col-lg-5">
                         <div class="section-application__mail">
                             <span>Или напишите нам</span>
-                            <a href="#">edtech@as-pacific.com</a>
+                            <a href="mailto:edtech@as-pacific.com">edtech@as-pacific.com</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="footer bg-color">
+        <footer id="contacts" class="footer bg-color">
             <div class="container footer__section">
                 <div class="row">
                     <div class="col-md-5">
@@ -6692,21 +6685,178 @@
         </div>
     </div>
 </div>
-
-<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">-->
-<!--    Запустить демонстрацию модального окна-->
-<!--</button>-->
-<div class="modal fade main-modal" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade main-modal" id="become-speaker" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <div class="section-teaser__wrapperVideo">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/knbvt_REvLw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                <button class="modal-close icon-close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="main-modal__body">
+                    <span class="main-modal__title">НАПИШИТЕ НАМ ДЛЯ ПОЛУЧЕНИЯ БРИФА И РАССКАЖИТЕ О СВОЕЙ КОМПЕТЕНЦИИ</span>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="formName" placeholder="Имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="formEmail" placeholder="Email">
+                        </div>
+                        <button type="submit" class="btn btn-primary main-btn main-modal__button">Отправить</button>
+                        <div class="form-group form-check mb-0">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Даю согласие на обработку персональных данных</label>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div class="modal fade main-modal modal-video" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="section-teaser__wrapperVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfCGQqxBDmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade main-modal modal-video" id="modal-theme-preview-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="section-teaser__wrapperVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfCGQqxBDmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade main-modal modal-video" id="modal-theme-preview-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="section-teaser__wrapperVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfCGQqxBDmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade main-modal modal-video" id="modal-theme-preview-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="section-teaser__wrapperVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfCGQqxBDmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade main-modal modal-video" id="modal-theme-preview-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="section-teaser__wrapperVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfCGQqxBDmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade main-modal modal-video" id="modal-theme-preview-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="section-teaser__wrapperVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfCGQqxBDmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade main-modal modal-video" id="modal-theme-preview-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="section-teaser__wrapperVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfCGQqxBDmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade main-modal modal-video" id="modal-theme-preview-7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="section-teaser__wrapperVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfCGQqxBDmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade main-modal modal-video" id="modal-theme-preview-8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="section-teaser__wrapperVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfCGQqxBDmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade main-modal modal-video" id="modal-theme-preview-9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="section-teaser__wrapperVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfCGQqxBDmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade main-modal modal-video" id="modal-theme-preview-10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="section-teaser__wrapperVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfCGQqxBDmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade main-modal modal-video" id="modal-theme-preview-11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="section-teaser__wrapperVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfCGQqxBDmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade main-modal modal-video" id="modal-theme-preview-12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="section-teaser__wrapperVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EfCGQqxBDmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script src="assets_landing/js/libs.min.js" type="module"></script>
 
 </body>

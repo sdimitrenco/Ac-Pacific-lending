@@ -86,5 +86,16 @@
     max-width: 558px;
     margin: 1.75rem auto;
   }
+
+  .modal-video {
+    .modal-dialog {
+      max-width: 1000px;
+    }
+
+    .section-teaser__wrapperVideo {
+      padding: 0px 0 55%;
+    }
+  }
+
 }
 
