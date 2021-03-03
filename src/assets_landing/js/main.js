@@ -247,13 +247,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function(){
-    // $('.modal').on('show.bs.modal', function () {
-    //     let youtube_src = $(this).children('div').children('div').children('div').children('div').children('iframe').attr("src");
-    //     console.log(youtube_src);
-    //     $(".modal iframe").attr("src", youtube_src);
-    // });
     $(".modal").on('hidden.bs.modal', function (e) {
-        // $(this).children('div').children('div').children('div').children('div').children('iframe').attr("src", null);
         jQuery("iframe").each(function() {
             jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
         });
