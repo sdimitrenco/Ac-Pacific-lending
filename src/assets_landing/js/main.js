@@ -247,9 +247,9 @@ $(document).ready(function () {
 });
 
 $(document).ready(function(){
-    var youtube_src = $(".modal iframe").attr("src");
+    let youtube_src = $(".modal iframe").attr("src");
     $('.modal').on('show.bs.modal', function () {
-        $(".modal iframe").attr("src", youtube_src + "?autoplay=1");
+        $(".modal iframe").attr("src", youtube_src);
     });
     $(".modal").on('hidden.bs.modal', function (e) {
         $(".modal iframe").attr("src", null);
