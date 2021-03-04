@@ -38,15 +38,15 @@ function styles() {
 
 function scripts() {
 	return gulp.src([
-		'src/assets_landing/js/main.js'
+		'src/assets_landing/js/**/*.js'
 	])
-		.pipe(rollup({ plugins: [babel(), resolve(), commonjs()] }, 'umd'))
-		.pipe(concat('libs.min.js'))
-		.pipe(plumber())
-		.pipe(rigger())
-		.pipe(gulp.dest('build/assets_landing/js'))
-		.pipe(terser())
-		.pipe(gulp.dest('build/assets_landing/js'))
+	// 	.pipe(rollup({ plugins: [babel(), resolve(), commonjs()] }, 'umd'))
+	// 	// .pipe(concat('libs.min.js'))
+	// 	.pipe(plumber())
+	// 	.pipe(rigger())
+	// 	.pipe(gulp.dest('build/assets_landing/js'))
+	// 	.pipe(terser())
+	// 	.pipe(gulp.dest('build/assets_landing/js'))
 		.pipe(browserSync.stream());
 }
 

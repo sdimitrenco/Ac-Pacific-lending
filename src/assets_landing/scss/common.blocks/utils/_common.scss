@@ -172,6 +172,10 @@ main {
 
   .section-course-selection__block-btnVideo {
     background: rgba(15,15,15,.5) !important;
+
+    &:hover {
+      background: rgba(15,15,15,.9) !important;
+    }
   }
 
   &:before {
@@ -186,6 +190,10 @@ main {
 
     .section-course-selection__block-btnVideo {
       background: rgba(15,15,15,.1) !important;
+
+      &:hover {
+        background: rgba(15,15,15,.5) !important;
+      }
     }
 
     .section-course-selection__block-img {
@@ -386,6 +394,12 @@ main {
       color: #1DBEB5 !important;
     }
   }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .bg-footer {
