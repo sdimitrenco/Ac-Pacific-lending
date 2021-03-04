@@ -59,3 +59,22 @@
   min-width: 214px;
   height: 56px;
 }
+
+@media (max-width: 767.98px) {
+  .modal-complex-plus__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-complex-plus__img {
+    margin-right: 0;
+  }
+
+  .modal-complex-plus__content {
+    align-items: center;
+  }
+
+  .modal-complex-plus__subTitle {
+    text-align: center;
+  }
+}
