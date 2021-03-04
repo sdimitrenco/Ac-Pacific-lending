@@ -1,9 +1,3 @@
-import './config/jqueryLoad';
-import 'bootstrap/dist/js/bootstrap.min';
-import 'slick-carousel/slick/slick.min';
-import '@fancyapps/fancybox/dist/jquery.fancybox.min';
-import 'lazysizes';
-
 $(document).ready(function(){
     $('[data-fancybox="gallery"]').fancybox({});
 
@@ -251,6 +245,11 @@ $(document).ready(function(){
         jQuery("iframe").each(function() {
             jQuery(this)[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*')
         });
+    });
+
+    $(".section-certificate__btn").click(function () {
+        $(".section-complex-plus__wrapper .section-course-selection__block-btn-open").trigger('click');
+        $(".section-complex-plus__wrapper").addClass('active');
     });
 });
 
