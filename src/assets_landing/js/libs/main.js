@@ -189,6 +189,13 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
+
+    $(".anchor-link-fast").on("click", function (event) {
+        event.preventDefault();
+        let id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
 });
 
 $('.section-course-selection__block-btn-open').click(function() {
