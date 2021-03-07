@@ -35,7 +35,8 @@
     width: 9px;
     height: 3px;
     border-radius: 20%;
-    background: #FFFFFF;
+    border-top: 3px solid #FFFFFF;
+    overflow: hidden;
   }
 
   p {
@@ -51,6 +52,10 @@
     font-size: 15px;
     line-height: 18px;
   }
+
+  .section-course-selection__block-li:before {
+    top: 8px;
+  }
 }
 
 .ul-v2 {
@@ -65,6 +70,10 @@
       line-height: 18px;
       color: #FFFFFF;
     }
+  }
+
+  .section-course-selection__block-li:before {
+    top: 9px;
   }
 }
 
@@ -110,6 +119,10 @@
 
   .section-course-selection__block-li {
     margin-bottom: 37px;
+  }
+
+  .section-course-selection__block-li:before {
+    top: 10px;
   }
 }
 

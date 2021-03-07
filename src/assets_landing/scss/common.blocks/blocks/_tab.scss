@@ -29,5 +29,17 @@
 @media (max-width: 767.98px) {
   .tab-container.active {
     padding-bottom: 50px;
+    display: block;
+    height: auto;
+  }
+
+  .tab-container.testClass {
+    display: block;
+    height: auto;
+  }
+
+  .tab-container {
+    display: none;
+    height: auto;
   }
 }
