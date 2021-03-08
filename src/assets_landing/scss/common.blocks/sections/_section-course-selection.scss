@@ -357,6 +357,7 @@
   width: 239px;
   height: 56px;
   padding: 0;
+  background-color: initial;
 
   a, span {
     display: flex;
@@ -545,6 +546,12 @@
 
   .section-course-selection__block-wrapper {
     align-items: flex-start;
+  }
+
+  .section-course-selection__block-btn {
+    &:hover {
+      background-color: initial;
+    }
   }
 }
 
