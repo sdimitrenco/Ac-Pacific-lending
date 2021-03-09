@@ -1,17 +1,20 @@
 .tab-container {
   overflow: hidden;
   transition: height 0.3s;
-  height: 0;
+  display: none;
+  height: auto;
   background: #FFFFFF;
   box-shadow: inset 0px -5px 36px rgba(0, 0, 0, 0.1);
 
   &.testClass {
-    height: 900px;
     transition: height 0.3s;
+    display: block;
+    height: auto;
   }
 
   &.active {
-    height: 100%;
+    display: block;
+    height: auto;
     padding-bottom: 70px;
   }
 }
@@ -29,17 +32,5 @@
 @media (max-width: 767.98px) {
   .tab-container.active {
     padding-bottom: 50px;
-    display: block;
-    height: auto;
-  }
-
-  .tab-container.testClass {
-    display: block;
-    height: auto;
-  }
-
-  .tab-container {
-    display: none;
-    height: auto;
   }
 }
