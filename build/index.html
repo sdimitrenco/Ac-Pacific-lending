@@ -6965,6 +6965,32 @@
     </div>
 </div>
 
+<div id="parent_w">
+    <div class="w-school">
+        <div class="row">
+            <div class="col-lg-6 img-w"></div>
+            <div class="col-lg-6 text-w">
+                <h6><span>СТАНЬ ЭКСПЕРТОМ</span>
+                    ПО МАРКЕТИНГУ В КИТАЕ</h6>
+                <p>Пройди обучение, получи сертификат
+                    и начни привлекать клиентов из Китая!
+                </p>
+                <div class="text-center">
+                    <a href=" " class="btn btn-pop-up">Успей получить курс со скидкой 30%</a>
+                </div>
+            </div>
+        </div>
+        <button class="close-w"
+                title="Закрыть"
+                onclick="document.getElementById('parent_popup').style.display='none';">
+
+        </button>
+    </div>
+</div>
+
+
+
+
 
 
 <script src="assets_landing/js/libs/jquery.min.js"></script>
@@ -6973,6 +6999,26 @@
 <script src="assets_landing/js/libs/jquery.fancybox.min.js"></script>
 <script src="assets_landing/js/libs/lazysizes.min.js"></script>
 <script src="assets_landing/js/libs/main.js"></script>
+
+<script src="http://yastatic.net/jquery/cookie/1.0/jquery.cookie.min.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+        // Проверяем запись в куках о посещении
+        // Если запись есть - ничего не происходит
+        if (!$.cookie('hideModal')) {
+            // если cookie не установлено появится окно
+            // с задержкой 5 секунд
+            let delay_w = 3000;
+            setTimeout("document.getElementById('parent_w').style.display='block'", delay_w);
+        }
+        $.cookie('hideModal', true, {
+            // Время хранения cookie в днях
+            expires: 7,
+            path: '/'
+        });
+    });
+</script>
 
 
 <script>

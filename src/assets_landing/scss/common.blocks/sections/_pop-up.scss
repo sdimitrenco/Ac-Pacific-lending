@@ -1,0 +1,131 @@
+/* Всплывающее окно
+* при загрузке сайта
+*/
+/* базовый контейнер, фон затемнения*/
+#parent_w {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 999;
+  -webkit-animation: fade .6s;
+  -moz-animation: fade .6s;
+  animation: fade .6s;
+  overflow: auto;
+}
+/* модальный блок */
+.w-school {
+  top: 50%;
+  left: 50%;
+  right: 0;
+  width: 100%;
+  margin-top: -111px;
+  margin-left: -340px;
+
+  max-width: 680px;
+  position: absolute;
+  z-index: 1000;
+  background: #FFFFFF;
+  border: 1px solid #95233C;
+  box-sizing: border-box;
+  box-shadow: 0px 18px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+
+  -webkit-animation: fade .6s;
+  -moz-animation: fade .6s;
+  animation: fade .6s;
+
+  overflow: hidden;
+}
+
+/* кнопка закрытия */
+.close-w {
+  top: 0px;
+  right: 0px;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  border: none;
+  background: url("../img/close-model-school.svg") no-repeat center;
+  cursor: pointer;
+  outline: none;
+  opacity: 1;
+
+}
+
+.close-w:hover {
+  opacity: 0.5;
+}
+
+.img-w {
+  background-color: #FFE6E6;
+  background-image: url("../img/icons-school.png");
+  background-size: 100% auto;
+  min-height: 245px;
+  background-position: center;
+
+}
+
+.text-w {
+  padding: 30px;
+}
+
+.text-w h6 {
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #211135;
+}
+
+.text-w span {
+  font-size: 30px;
+  color: #5A3C5E;
+  display: block;
+}
+
+.text-w p {
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #555555;
+}
+
+.btn-w {
+  color: #fff;
+  background-color: #cc1237;
+  border-color: #cc1237;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  height: 45px;
+  padding-top: 14px;
+}
+
+@media screen and (max-width: 991px) {
+  .w {
+    width: 280px;
+    margin-top: -111px;
+    margin-left: -140px;
+  }
+
+  .text-w span {
+    font-size: 25px;
+  }
+
+  .text-w h6 {
+    font-size: 19px;
+  }
+
+  .btn-w {
+    font-size: 11px;
+  }
+
+  .img-w {
+    min-height: 205px;
+  }
+}
