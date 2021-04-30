@@ -43,6 +43,20 @@
   }
 }
 
+.substrate {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.substrate.active {
+  display: block;
+}
+
 @media (max-width: 1199.98px) {
   .header__navbar {
     .navbar-collapse {
@@ -76,6 +90,7 @@
     border-radius: 9px;
     width: 33px;
     height: 33px;
+    z-index: 49;
 
     span {
       transition: 0.3s;

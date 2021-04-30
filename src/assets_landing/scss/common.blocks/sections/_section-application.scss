@@ -21,6 +21,28 @@
   max-width: 600px;
 }
 
+.price-desc {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 25px;
+}
+
+.active .price-desc {
+  color: #333;
+}
+
+.price-mb {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 24px;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
 .section-application__form-block {
   display: flex;
   flex-direction: column;

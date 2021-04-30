@@ -2,6 +2,10 @@ html, body {
   font-family: 'Gilroy', sans-serif;
 }
 
+#feedback-form .ajax_form .error {
+  color: #fff;
+}
+
 body.active {
   overflow: hidden;
 }
